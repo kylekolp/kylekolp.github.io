@@ -1,0 +1,117 @@
+body {
+  overflow:hidden;
+  background-color: white; /* normally #f4dfbd */
+  animation: fadeIn 0.75s ease-in-out 0s forwards;
+  animation-delay: 0.5s;
+}
+
+@keyframes fadeIn{
+  0%{
+    background-color: white;
+  }
+  100%{
+    background-color: #f4dfbd;
+  }
+}
+
+.Slide1{
+  background-image: url("../pins_sprite.png")
+}
+
+.Screen1{
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.Notes{
+  position: absolute;
+  top: 1000px; /* Normally 100px */
+  opacity: 0;
+  left: 300px;
+  animation: slidePage 0.75s ease-in-out 0s forwards;
+  animation-delay: 1s;
+}
+
+@keyframes slidePage{
+  from { top: 1000px; opacity: 0; }
+    to { top: 100px; opacity: 1; }
+}
+
+.Page {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  width: 509px;
+  height: 656px;
+}
+
+#Paper{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 509px;
+  height: 656px;
+  background-position: 0px 0px;
+}
+
+#Text_Hi{
+  position: absolute;
+  top: 150px;
+  left: 50px;
+  width: 344px;
+  height: 289px;
+  background-position: -80px -674px;
+}
+
+#Text_Scroll{
+  position: absolute;
+  opacity: 0;
+  top: 450px;
+  left: 65px;
+  width: 391px;
+  height: 93px;
+  background-position: -86px -972px;
+  animation: blink 2.5s infinite;
+  animation-delay: 2.25s;
+}
+
+@keyframes blink{
+  0%{     opacity: 0;    }
+  60%{   opacity: 1;    }
+  100%{   opacity: 0;    }
+}
+
+#Character{
+  position: absolute;
+  top: 174px;
+  left: 1500px; /* normally 900px */
+  width: 881px;
+  opacity: 0;
+  height: 764px;
+  background-position: -717px -316px;
+  animation: slideCharacter 0.6s ease-in-out 0s forwards;
+  animation-delay: 1.5s;
+}
+
+@keyframes slideCharacter{
+  from { left: 1500px; opacity: 0; }
+    to { left: 900px; opacity: 1; }
+}
+
+#Tacks{
+  position: absolute;
+  top: -200px; /* normally 40px*/
+  left: 1100px;
+  width: 576px;
+  height: 135px;
+  opacity: 0;
+  background-position: -576px -30px;
+  animation: slideTacks 0.75s ease-in-out 0s forwards;
+  animation-delay: 1s;
+}
+
+@keyframes slideTacks{
+  from { top: -200px; opacity: 0; }
+    to { top: 40px; opacity: 1; }
+}
