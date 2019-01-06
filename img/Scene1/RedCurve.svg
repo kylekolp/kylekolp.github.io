@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1941.507" height="1424.403" viewBox="0 0 1941.507 1424.403">
+  <defs>
+    <filter id="Red_Curve" x="0" y="0" width="1941.507" height="1424.403" filterUnits="userSpaceOnUse">
+      <feOffset dx="17" dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feFlood flood-opacity="0.2"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Red_Curve)">
+    <path id="Red_Curve-2" data-name="Red Curve" d="M1918.969,25.2c-30.43-.951-925.193-1.827-925.193-1.827S549.027,0,3.531,1098.054c-3.531,49.43,0,333.653,0,333.653s205.311,37.073,665.541-333.653C903.864,114.748,1576.467,116.514,1918.969,25.2Z" transform="translate(-1.96 -18.83)" fill="#fd6467"/>
+  </g>
+</svg>

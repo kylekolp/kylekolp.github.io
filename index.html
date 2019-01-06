@@ -1,51 +1,82 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <title>Kyle Kolpack</title>
 
-<title>Kyle Kolpack</title>
+    <!--  Tween Lite -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+    <!--  Scroll Magic -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/animation.gsap.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/debug.addIndicators.min.js"></script>
+    <!--  JQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!--  BootStrap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
-<!--  Tween Lite -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
-<!--  Scroll Magic -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/animation.gsap.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/debug.addIndicators.min.js"></script>
-<!--  JQuery -->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<!--  BootStrap -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-<link rel="stylesheet" type="text/css" href="css/main.css">
+    <!-- font-family: 'Roboto Slab', serif; -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700" rel="stylesheet">
 
-<!-- <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet"> -->
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <script type="text/javascript" src="main.js"></script>
 
+</head>
 <body>
-
-<div class="Person" id="Kyle">
-  <div class="Char" id="Character"></div>
-</div>
-
-<div class="Screen1">
-
-    <div class="Page">
-      <div id="Paper"></div>
-      <div id="Text_Hi"></div>
-      <div id="Text_Scroll"></div>
+    <svg id="UnderLine" height="900" width="1000"><line x1="230" y1="550" x2="760" y2="550" style="stroke:rgba(70,70,70,.42);stroke-width:7" /></svg>
+    <div id="Scene1">
+        <div id="TriggerScene1"></div>
+        <div id="TriggerPose"></div>
+        <h1 id="Title">Kyle<br>Kolpack</h1>
+        <h2 id="SubTitle">Software Developer</h2>
+        <div id="RedCurve"></div>
+        <div id="BlueCurve"></div>
+        <div id="Pose"></div>
     </div>
-
-  <div class="new"></div>
-  <div id="Tacks"></div>
-</div>
-
-<div class="Screen2">
-  <div class="Slide2" id="pin_Pose"></div>
-</div>
-
-<div class="Screen3">
-</div>
-
+    <div id="Scene2">
+        <div id="BlueCurve2"></div>
+        <p class="About" id="A1">Whether it's video games, mobile apps, or web development, I've<br>always been drawn toward the process of creating digital media</p>
+        <p class="About" id="A2">As an ever growing Software Engineer I am always<br>eager to learn new skills and begin new projects.</p>
+        <p class="About" id="A3">You can check out some of these below yourself</p>
+    </div>
+    <div id="Scene3">
+        <div class="Network" id="Network"></div>
+        <div id="BackTab1"></div>
+        <div id="LabTab">
+            <div id="RedSplat"></div>
+            <div id="LabDate"></div>
+            <h3 id="LabTitle">Labyrinth</h3>
+            <p id="LabDesc">Lorem ipsum dolor sit amet, consectetur<br>adipiscing elit, sed do eiusmod tempor<br>incididunt ut labore et dolore magna aliqua. Ut<br>enim ad minim veniam, quis</p>
+            <div id="LabLogo"></div>
+        </div>
+        <div id="IntTab">
+                <div id="BlueSplat"></div>
+                <div id="IntDate"></div>
+                <h3 id="LabTitle">Interpreter</h3>
+                <p id="LabDesc">Lorem ipsum dolor sit amet, consectetur<br>adipiscing elit, sed do eiusmod tempor<br>incididunt ut labore et dolore magna aliqua. Ut<br>enim ad minim veniam, quis</p>
+                <div id="IntLogo"></div>
+        </div>
+        <div id="CompTab">
+                <div id="GreenSplat"></div>
+                <div id="CompDate"></div>
+                <h3 id="LabTitle">Compiler</h3>
+                <p id="LabDesc">Lorem ipsum dolor sit amet, consectetur<br>adipiscing elit, sed do eiusmod tempor<br>incididunt ut labore et dolore magna aliqua. Ut<br>enim ad minim veniam, quis</p>
+                <div id="CompLogo"></div>
+        </div>
+        <div id="AlgoTab">
+            <div id="YellowSplat"></div>
+            <div id="AlgoDate"></div>
+            <h3 id="AlgoTitle">Algorithm Visualizer</h3>
+            <p id="LabDesc">Lorem ipsum dolor sit amet, consectetur<br>adipiscing elit, sed do eiusmod tempor<br>incididunt ut labore et dolore magna aliqua. Ut<br>enim ad minim veniam, quis</p>
+            <div id="AlgoLogo"></div>
+        </div>
+        <div id="BackTab2"></div>
+    </div>
+    <div id="EndPage"></div>    
 </body>
-
 </html>
-
-<script type="text/javascript" src="js/main.js"></script>

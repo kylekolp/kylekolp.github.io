@@ -1,1 +1,0 @@
-The site can be found at: kylekolp@github.io for free!!!
