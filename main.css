@@ -548,7 +548,7 @@ svg {
 
 #LangText {
     position: absolute;
-    top: 190px;
+    top: 115px;
     left: -15px;
 }
 
@@ -560,6 +560,18 @@ h4 {
     font-family: 'Roboto Slab', serif;
     font-weight: 700;
     font-size: 111px;
+    letter-spacing: -0.071em;
+    white-space: nowrap;
+}
+
+#FullResume {
+    position: absolute;
+    top: 680px;
+    left: 350px;
+    color: #fff;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 300;
+    font-size: 46px;
     letter-spacing: -0.071em;
     white-space: nowrap;
 }
