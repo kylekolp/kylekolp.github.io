@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="788" height="763" viewBox="0 0 788 763">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.479" y1="0.448" x2="0" y2="0.45" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fff" stop-opacity="0"/>
+      <stop offset="1" stop-color="#fff"/>
+    </linearGradient>
+  </defs>
+  <rect id="Fade" width="788" height="763" opacity="0.49" fill="url(#linear-gradient)"/>
+</svg>

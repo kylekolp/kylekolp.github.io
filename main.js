@@ -33,7 +33,7 @@ $(document).ready(function(){
     var tlH2 = new TimelineLite();
     tlH2.from(h2, 0.75, {opacity: 0, x: -100}, "+=2");
 
-    var tween3 = TweenMax.to(Pose, 10, {x: 770, ease:Power1.easeInOut});
+    var tween3 = TweenMax.to(Pose, 10, {x: 790, ease:Power1.easeInOut});
 
     var PoseHook = new ScrollMagic.Scene({
         triggerElement: "#TiggerPose",
@@ -460,6 +460,202 @@ $(document).ready(function(){
       //   name: 'CompTab Fade',
       //   colorTrigger: 'black',
       //   indent: 150
+      // })
+      .addTo(controller);
+
+    var LangPanel = document.getElementById("LangPanel");
+    var tween17 = TweenMax.to(LangPanel, 1, {y: 600, ease:Power2.easeOut});
+
+    var LangHook = new ScrollMagic.Scene({
+      triggerElement: "#Scene4",
+      triggerHook: 0.2,
+      duration: "130%"
+    }).setPin("#LangPanel",  {pushFollowers: false})
+      .setTween(tween17)
+      // .addIndicators({
+      //   name: 'LangPanel Pin',
+      //   colorTrigger: 'black',
+      //   indent: 150
+      // })
+      .addTo(controller);
+
+    var tween18 = TweenMax.to(LangPanel, 1, {y: 610, ease:Power2.easeOut});
+
+    var LangHook2 = new ScrollMagic.Scene({
+      triggerElement: "#Scene4",
+      triggerHook: 0.2,
+      offset: 1220,
+      duration: "425%"
+    }).setPin("#LangPanel",  {pushFollowers: false})
+      .setTween(tween18)
+      // .addIndicators({
+      //   name: 'LangPanel Slide',
+      //   colorTrigger: 'black',
+      //   indent: 150
+      // })
+      .addTo(controller);
+
+    var ResumeText = document.getElementById("ResumeText");
+    var tween19 = TweenMax.to(ResumeText, 1, {y: 560, ease:Power1.easeInOut});
+
+    var ResumeHook = new ScrollMagic.Scene({
+      triggerElement: "#Scene4",
+      triggerHook: 0.2,
+      duration: "130%"
+    }).setPin("#ResumeText",  {pushFollowers: false})
+      .setTween(tween19)
+      // .addIndicators({
+      //   name: 'ResumeText Pin',
+      //   colorTrigger: 'black',
+      //   indent: 300
+      // })
+      .addTo(controller);
+
+
+    var tween20 = TweenMax.to(ResumeText, 1, {x: -800, ease:Power1.easeInOut});
+
+    var ResumeHook2 = new ScrollMagic.Scene({
+      triggerElement: "#Scene4",
+      triggerHook: 0.2,
+      offset: 1220,
+      duration: "130%"
+    }).setPin("#ResumeText",  {pushFollowers: false})
+      .setTween(tween20)
+      // .addIndicators({
+      //   name: 'ResumeText Slide',
+      //   colorTrigger: 'black',
+      //   indent: 300
+      // })
+      .addTo(controller);
+
+    var ResumeHook3 = new ScrollMagic.Scene({
+      triggerElement: "#Scene4",
+      triggerHook: 0.2,
+      offset: 2440,
+      duration: "50%"
+    }).setPin("#ResumeText",  {pushFollowers: false})
+      // .addIndicators({
+      //   name: 'ResumeText Slide2',
+      //   colorTrigger: 'black',
+      //   indent: 300
+      // })
+      .addTo(controller);
+
+    var HiddenPanel = document.getElementById("HiddenPanel");
+
+    var HiddenPanelHook = new ScrollMagic.Scene({
+      triggerElement: "#Scene5",
+      triggerHook: 0.2,
+      offset: 180,
+      duration: "150%"
+    }).setPin("#HiddenPanel",  {pushFollowers: false})
+      // .addIndicators({
+      //   name: 'HiddenPanel Pin',
+      //   colorTrigger: 'black',
+      // })
+      .addTo(controller);
+
+
+    var InfoTab = document.getElementById("InfoTab");
+    var tween21 = TweenMax.to(InfoTab, 1, {x: -980, ease:Power1.easeInOut});
+
+    var InfoTabHook = new ScrollMagic.Scene({
+      triggerElement: "#Scene5",
+      triggerHook: 0.2,
+      offset: 180,
+      duration: "150%"
+    }).setPin("#InfoTab",  {pushFollowers: false})
+      .setClassToggle("#InfoTab", "Visible")
+      .setTween(tween21)
+      // .addIndicators({
+      //   name: 'InfoTab Slide',
+      //   colorTrigger: 'black',
+      //   indent: 300
+      // })
+      .addTo(controller);
+
+    var InfoTabHook2 = new ScrollMagic.Scene({
+      triggerElement: "#Scene5",
+      triggerHook: 0.2,
+      offset: 1588,
+      duration: "232.5%"
+    }).setPin("#InfoTab",  {pushFollowers: false})
+      .setClassToggle("#InfoTab", "Visible")
+      // .addIndicators({
+      //   name: 'InfoTab Pin2',
+      //   colorTrigger: 'black',
+      //   indent: 300
+      // })
+      .addTo(controller);
+
+    var tween22 = TweenMax.to(LangPanel, 1, {y: 2690, ease:Power1.easeIn});
+
+    var LangHook3 = new ScrollMagic.Scene({
+      triggerElement: "#Scene5",
+      triggerHook: 0.2,
+      offset: 1588,
+      duration: "110%"
+    }).setTween(tween22)
+      // .addIndicators({
+      //   name: 'LangPanel Drop',
+      //   colorTrigger: 'black',
+      // })
+      .addTo(controller);
+
+    var Pose2 = document.getElementById("Pose2");
+
+    var Pose2Hook = new ScrollMagic.Scene({
+      triggerElement: "#Scene5",
+      triggerHook: 0.2,
+      offset: 2200,
+      duration: "167%"
+    }).setPin("#Pose2",  {pushFollowers: false})
+      .setClassToggle("#Pose2", "Visible")
+      // .addIndicators({
+      //   name: 'Pose2 Set',
+      //   colorTrigger: 'black',
+      //   indent: 150
+      // })
+      .addTo(controller);
+
+    var Contact = document.getElementById("Contact");
+    var tween23 = TweenMax.from(Contact, 1, {opacity: 0, ease:Power1.easeOut});
+
+    var ContactHook = new ScrollMagic.Scene({
+      triggerElement: "#Scene5",
+      triggerHook: 0.2,
+      offset: 2956,
+      duration: "30%"
+    }).setPin("#Contact",  {pushFollowers: false})
+      .setTween(tween23)
+      // .addIndicators({
+      //   name: 'Contact Fade',
+      //   colorTrigger: 'black',
+      //   indent: 150
+      // })
+      .addTo(controller);
+
+    var ContactHook = new ScrollMagic.Scene({
+      triggerElement: "#Scene5",
+      triggerHook: 0.2,
+      offset: 3235,
+      duration: "56.5%"
+    }).setPin("#Contact",  {pushFollowers: false})
+      // .addIndicators({
+      //   name: 'Contact Pin',
+      //   colorTrigger: 'black'
+      // })
+      .addTo(controller);
+
+    var FinalHook = new ScrollMagic.Scene({
+      triggerElement: "#Scene5",
+      triggerHook: 0.2,
+      offset: 2630,
+    }).setClassToggle("#LangPanel", "invisible")
+      // .addIndicators({
+      //   name: 'EndPage Hook',
+      //   colorTrigger: 'black',
+      //   indent: 270
       // })
       .addTo(controller);
 
