@@ -1,6 +1,6 @@
 $(window).on('beforeunload', function(){
-  // $(window).scrollTop(0);
-  // $(window).scrollLeft(0);
+  $(window).scrollTop(0);
+  $(window).scrollLeft(0);
   // Labyrinth: 7900
   // Interpreter: 8700
   // Compiler: 9500

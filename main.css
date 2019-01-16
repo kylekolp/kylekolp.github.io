@@ -1,5 +1,5 @@
 body{
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
     animation: ScrollDelay 4.25s ease-in-out 0s forwards;
 }
 
