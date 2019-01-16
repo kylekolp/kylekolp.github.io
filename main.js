@@ -1,10 +1,19 @@
 $(window).on('beforeunload', function(){
-  $(window).scrollTop(0);
+  // $(window).scrollTop(0);
+  // $(window).scrollLeft(0);
+  // Labyrinth: 7900
+  // Interpreter: 8700
+  // Compiler: 9500
+  // Algo Visual: 10050
 });
 
-$(document).ready(function(){
+var controller = new ScrollMagic.Controller();
+var controller2 = new ScrollMagic.Controller({vertical: false});
 
-    var controller = new ScrollMagic.Controller();
+var LabExtend = false;
+var ButtonHook;
+
+$(document).ready(function(){
 
     var RedCurve = document.getElementById('RedCurve');
     var BlueCurve = document.getElementById('BlueCurve');
@@ -47,7 +56,6 @@ $(document).ready(function(){
         .addTo(controller);
 
     var PoseHook2 = new ScrollMagic.Scene({
-      triggerElement: "#TiggerPose",
       triggerHook: 0.2,
       offset: 450,
       duration: "90%"
@@ -59,8 +67,19 @@ $(document).ready(function(){
       // })
       .addTo(controller);
 
+    var tween41 = TweenMax.to(Pose, 1, {y: -1500, ease:Power1.easeInOut});
+
+    var PoseHook3 = new ScrollMagic.Scene({
+      triggerHook: 0.2,
+      offset: 1190,
+    }).setTween(tween41)
+      // .addIndicators({
+      //   name: 'PoseRemove',
+      //   colorTrigger: 'black'
+      // })
+      .addTo(controller2);
+
     var RedHook = new ScrollMagic.Scene({
-      triggerElement: "#TiggerScene1",
       triggerHook: 0.2,
       duration: "130%"
     }).setPin("#RedCurve", {pushFollowers: false})
@@ -72,7 +91,6 @@ $(document).ready(function(){
       .addTo(controller);
 
     var RedHook2 = new ScrollMagic.Scene({
-      triggerElement: "#TiggerScene1",
       triggerHook: 0.2,
       offset: 2290,
       duration: "325%"
@@ -87,7 +105,6 @@ $(document).ready(function(){
     var tween8 = TweenMax.to(RedCurve, 10, {x: -500, ease:Power1.easeInOut});
 
     var RedHook3 = new ScrollMagic.Scene({
-      triggerElement: "#TiggerScene1",
       triggerHook: 0.2,
       offset: 5338,
       duration: "40%"
@@ -101,7 +118,6 @@ $(document).ready(function(){
       .addTo(controller);
 
     var BlueHook = new ScrollMagic.Scene({
-      triggerElement: "#TiggerScene1",
       triggerHook: 0.2,
       duration: "130%"
     }).setPin("#BlueCurve", {pushFollowers: false})
@@ -115,7 +131,6 @@ $(document).ready(function(){
     var tween0 = TweenMax.to(BlueCurve, 10, {x: -900, y: -100, ease:Power1.easeInOut});
 
     var BlueHook2 = new ScrollMagic.Scene({
-      triggerElement: "#TiggerScene1",
       triggerHook: 0.2,
       offset: 710,
       duration: "100%"
@@ -131,7 +146,6 @@ $(document).ready(function(){
     var tween2 = TweenMax.to(UnderLine, 10, {opacity: 0, ease:Power1.easeInOut});
 
     var SubHook = new ScrollMagic.Scene({
-      triggerElement: "#TiggerScene1",
       triggerHook: 0.2,
       duration: "60%"
     }).setPin("#SubTitle", {pushFollowers: false})
@@ -144,7 +158,6 @@ $(document).ready(function(){
       .addTo(controller);
 
     var ULHook = new ScrollMagic.Scene({
-      triggerElement: "#TiggerScene1",
       triggerHook: 0.2,
       duration: "30%"
     }).setPin("#UnderLine", {pushFollowers: false})
@@ -196,6 +209,17 @@ $(document).ready(function(){
         .setTween(tween7)
         // .addIndicators({
         //   name: 'Blue2 Exit2',
+        //   colorTrigger: 'black'
+        // })
+        .addTo(controller);
+
+      var BlueHook25 = new ScrollMagic.Scene({
+        triggerElement: "#BlueCurve2",
+        triggerHook: 0.2,
+        offset: 2494
+      }).setClassToggle("#BlueCurve2", "Invisible")
+        // .addIndicators({
+        //   name: 'Blue2 Opacity',
         //   colorTrigger: 'black'
         // })
         .addTo(controller);
@@ -360,6 +384,22 @@ $(document).ready(function(){
       .setTween(tween12)
       // .addIndicators({
       //   name: 'Network SlideIn',
+      //   colorTrigger: 'black',
+      //   indent: 300
+      // })
+      .addTo(controller);
+
+    var Labbutton = document.getElementById("Labbutton");
+    var tween25 = TweenMax.to(Labbutton, 10, {opacity: 1, ease:Power1.easeInOut});
+
+    var LabLinkHook = new ScrollMagic.Scene({
+      triggerElement: "#A1",
+      offset: 3400,
+      triggerHook: 0.2,
+      duration: "25%"
+    }).setTween(tween25)
+      // .addIndicators({
+      //   name: 'LabButton Fade',
       //   colorTrigger: 'black',
       //   indent: 300
       // })
@@ -659,4 +699,544 @@ $(document).ready(function(){
       // })
       .addTo(controller);
 
+    var LabExtTitle = document.getElementById('LabExtTitle');
+    var tween36 = TweenMax.from(LabExtTitle, 0.75, {opacity: 0, x: -200, ease:Power1.easeOut});
+    
+    var LabExtTitleHook = new ScrollMagic.Scene({
+      offset: 4490,
+      triggerHook: 0.2
+    }).setTween(tween36)
+      // .addIndicators({
+      //   name: 'LabTitle Pin',
+      //   colorTrigger: 'black'
+      // })
+      .addTo(controller2);
+
+    var LabSubTitle = document.getElementById('LabSubTitle');
+    var tween37 = TweenMax.from(LabSubTitle, 0.75, {opacity: 0, x: -200, ease:Power1.easeOut});
+    
+    var LabSubTitleHook = new ScrollMagic.Scene({
+      offset: 4565,
+      triggerHook: 0.2
+    }).setTween(tween37)
+      // .addIndicators({
+      //   name: 'LabSubTitle Pin',
+      //   colorTrigger: 'black',
+      //   indent: 20
+      // })
+      .addTo(controller2);
+
+    var LabExtDate = document.getElementById('LabExtDate');
+    var tween38 = TweenMax.from(LabExtDate, 1, {opacity: 0, x: -200, ease:Power1.easeOut});
+    
+    var LabExtDateHook = new ScrollMagic.Scene({
+      offset: 4530,
+      triggerHook: 0.2
+    }).setTween(tween38)
+      // .addIndicators({
+      //   name: 'LabDate Fade',
+      //   colorTrigger: 'black',
+      //   indent: 40
+      // })
+      .addTo(controller2);
+
+    var LabBackButton = document.getElementById('LabBackButton');
+    var tween41 = TweenMax.from(LabBackButton, 1, {opacity: 0, x: -200, ease:Power1.easeOut});
+    
+    var LabBackButtonHook = new ScrollMagic.Scene({
+      offset: 4530,
+      triggerHook: 0.2
+    }).setPin("#LabBackButton", {pushFollowers: false})
+      .setTween(tween41)
+      // .addIndicators({
+      //   name: 'Back Fade',
+      //   colorTrigger: 'black',
+      //   indent: 80
+      // })
+      .addTo(controller2);
+
+    var LabGridHook = new ScrollMagic.Scene({
+      offset: 0,
+      triggerHook: 0.2,
+      duration: "448%"
+    }).setPin("#LabGrid", {pushFollowers: false})
+      // .addIndicators({
+      //   name: 'LabGrid Pin',
+      //   colorTrigger: 'black',
+      //   indent: 100
+      // })
+      .addTo(controller);
+
+    var LabGridHook2 = new ScrollMagic.Scene({
+      offset: 4202,
+      triggerHook: 0.2,
+      duration: "50%"
+    }).setPin("#LabGrid", {pushFollowers: false})
+      // .addIndicators({
+      //   name: 'LabGrid2 Pin',
+      //   colorTrigger: 'black',
+      //   indent: 100
+      // })
+      .addTo(controller);
+      
+    var LabGrid = document.getElementById('LabGrid');
+    var tween32 = TweenMax.to(LabGrid, 1, {opacity: 0, ease:Power1.easeInOut});
+    var tween33 = TweenMax.to(LabGrid, 1, {opacity: 1, ease:Power1.easeInOut});
+    var tween34 = TweenMax.to(LabGrid, 1, {opacity: 0, ease:Power1.easeInOut});
+    var tween35 = TweenMax.to(LabGrid, 1, {opacity: 1, ease:Power1.easeInOut});
+
+    var tween39 = TweenMax.from(LabGrid, 0.75, {x: -200, ease:Power1.easeOut});
+    
+    var LabGridFadeInHook = new ScrollMagic.Scene({
+      offset: 4530,
+      triggerHook: 0.2
+    }).setTween(tween39)
+      // .addIndicators({
+      //   name: 'LabGrid FadeIn',
+      //   colorTrigger: 'black',
+      //   indent: 60
+      // })
+      .addTo(controller2);
+
+
+    var LabGridHook3 = new ScrollMagic.Scene({
+      offset: 4671,
+      triggerHook: 0.2,
+      duration: "30%"
+    }).setPin("#LabGrid", {pushFollowers: false})
+      .setTween(tween32)
+      // .addIndicators({
+      //   name: 'LabGrid3 Pin',
+      //   colorTrigger: 'black',
+      //   indent: 100
+      // })
+      .addTo(controller);
+
+    var LabGridHook4Pose = new ScrollMagic.Scene({
+      offset: 4953,
+      triggerHook: 0.2,
+    }).setClassToggle("#LabGrid", "Pose2")
+      // .addIndicators({
+      //   name: 'LabGrid4 Pose',
+      //   colorTrigger: 'black',
+      //   indent: 250
+      // })
+      .addTo(controller);
+
+    var LabGridHook4 = new ScrollMagic.Scene({
+      offset: 4953,
+      triggerHook: 0.2,
+      duration: "30%"
+    }).setPin("#LabGrid", {pushFollowers: false})
+      .setTween(tween33)
+      // .addIndicators({
+      //   name: 'LabGrid4 Pin',
+      //   colorTrigger: 'black',
+      //   indent: 100
+      // })
+      .addTo(controller);
+
+    var LabGridHook42 = new ScrollMagic.Scene({
+      offset: 5234,
+      triggerHook: 0.2,
+      duration: "32%"
+    }).setPin("#LabGrid", {pushFollowers: false})
+      .setTween(tween34)
+      // .addIndicators({
+      //   name: 'LabGrid42 Pin',
+      //   colorTrigger: 'black',
+      //   indent: 100
+      // })
+      .addTo(controller);
+
+    var LabGridHook5 = new ScrollMagic.Scene({
+      offset: 5534,
+      triggerHook: 0.2,
+      duration: "30%"
+    }).setPin("#LabGrid", {pushFollowers: false})
+      .setTween(tween34)
+      // .addIndicators({
+      //   name: 'LabGrid5 Pin',
+      //   colorTrigger: 'black',
+      //   indent: 100
+      // })
+      .addTo(controller);
+
+    var LabGridHook6Pose = new ScrollMagic.Scene({
+      offset: 5815,
+      triggerHook: 0.2
+    }).setClassToggle("#LabGrid", "Pose3")
+      // .addIndicators({
+      //   name: 'LabGrid6Pose',
+      //   colorTrigger: 'black',
+      //   indent: 220
+      // })
+      .addTo(controller);
+
+    var LabGridHook6 = new ScrollMagic.Scene({
+      offset: 5815,
+      triggerHook: 0.2,
+      duration: "30%"
+    }).setPin("#LabGrid", {pushFollowers: false})
+      .setTween(tween35)
+      // .addIndicators({
+      //   name: 'LabGrid6 Pin',
+      //   colorTrigger: 'black',
+      //   indent: 100
+      // })
+      .addTo(controller);
+
+    var LabGridHook7 = new ScrollMagic.Scene({
+      offset: 6096,
+      triggerHook: 0.2,
+      duration: "60%"
+    }).setPin("#LabGrid", {pushFollowers: false})
+      // .addIndicators({
+      //   name: 'LabGrid7 Pin',
+      //   colorTrigger: 'black',
+      //   indent: 100
+      // })
+      .addTo(controller);
+
+    var PlayerToken = document.getElementById('PlayerToken');
+    var tween26 = TweenMax.from(PlayerToken, 1, {opacity: 0, ease:Power1.easeInOut});
+
+    var PlayerHook = new ScrollMagic.Scene({
+      offset: 700,
+      triggerHook: 0.2,
+      duration: "75%"
+    }).setTween(tween26)
+      // .addIndicators({
+      //   name: 'Player FadeIn',
+      //   colorTrigger: 'black',
+      //   indent: 200
+      // })
+      .addTo(controller);
+
+    var tlPlayer = new TimelineLite();
+    
+    tlPlayer.to(PlayerToken, 1, {x: 175, ease:Power2.easeInOut});
+    tlPlayer.to(PlayerToken, 1.25, {y: 350, ease:Power2.easeInOut}, "-=0.5");
+    tlPlayer.to(PlayerToken, 1, {x: 350, ease:Power2.easeInOut}, "-=0.5");
+
+    var PlayerHookAnim = new ScrollMagic.Scene({
+      offset: 2102,
+      triggerHook: 0.2,
+      duration: "125.25%"
+    }).setTween(tlPlayer)
+      // .addIndicators({
+      //   name: 'Player Timeline',
+      //   colorTrigger: 'black',
+      //   indent: 440
+      // })
+      .addTo(controller);
+
+    var tween31 = TweenMax.to(PlayerToken, 1, {opacity: 0, ease:Power1.easeInOut});
+
+    var PlayerFadeHook = new ScrollMagic.Scene({
+      offset: 4056,
+      triggerHook: 0.2,
+      duration: "50%"
+    }).setTween(tween31)
+      // .addIndicators({
+      //   name: 'PlayerFade',
+      //   colorTrigger: 'black',
+      //   indent: 100
+      // })
+      .addTo(controller);
+
+    var PlayerPath = document.getElementById('PlayerPath');
+    var tween27 = TweenMax.from(PlayerPath, 1, {opacity: 0, ease:Power1.easeInOut});
+
+    var PathHook = new ScrollMagic.Scene({
+      offset: 700,
+      triggerHook: 0.2,
+      duration: "75%"
+    }).setTween(tween27)
+      // .addIndicators({
+      //   name: 'Path FadeIn',
+      //   colorTrigger: 'black',
+      //   indent: 0
+      // })
+      .addTo(controller);
+
+    var tween32 = TweenMax.to(PlayerPath, 1, {opacity: 0, ease:Power1.easeInOut});
+
+    var PathFadeHook = new ScrollMagic.Scene({
+      offset: 4056,
+      triggerHook: 0.2,
+      duration: "50%"
+    }).setTween(tween32)
+      // .addIndicators({
+      //   name: 'PathFade',
+      //   colorTrigger: 'black',
+      //   indent: 200
+      // })
+      .addTo(controller);
+
+    var Key = document.getElementById('Key');
+    var tween30 = TweenMax.from(Key, 1, {opacity: 0, ease:Power1.easeInOut});
+
+    var KeyHook = new ScrollMagic.Scene({
+      offset: 700,
+      triggerHook: 0.2,
+      duration: "75%"
+    }).setTween(tween30)
+      // .addIndicators({
+      //   name: 'Key FadeIn',
+      //   colorTrigger: 'black',
+      //   indent: 100
+      // })
+      .addTo(controller);
+
+    var tween32 = TweenMax.to(Key, 1, {opacity: 0, ease:Power1.easeInOut});
+
+    var PlayerFadeHook = new ScrollMagic.Scene({
+      offset: 4056,
+      triggerHook: 0.2,
+      duration: "50%"
+    }).setTween(tween32)
+      // .addIndicators({
+      //   name: 'KeyFade',
+      //   colorTrigger: 'black',
+      //   indent: 300
+      // })
+      .addTo(controller);
+
+    var PMove1 = document.getElementById('PMove1');
+    var tween28 = TweenMax.from(PMove1, 1, {opacity: 0, ease:Power1.easeInOut});
+
+    var PathTextHook1 = new ScrollMagic.Scene({
+      offset: 1400,
+      triggerHook: 0.2,
+      duration: "75%"
+    }).setPin("#PMove1", {pushFollowers: false})
+      .setTween(tween28)
+      // .addIndicators({
+      //   name: 'PMove1 Pin',
+      //   colorTrigger: 'black',
+      //   indent: 250
+      // })
+      .addTo(controller);
+
+    var PathTextHook12 = new ScrollMagic.Scene({
+      offset: 2103,
+      triggerHook: 0.2,
+      duration: "125%"
+    }).setPin("#PMove1", {pushFollowers: false})
+      // .addIndicators({
+      //   name: 'PMove12 Pin',
+      //   colorTrigger: 'black',
+      //   indent: 250
+      // })
+      .addTo(controller);
+
+    var PMove2 = document.getElementById('PMove2');
+    var tween29 = TweenMax.from(PMove2, 1, {opacity: 0, ease:Power1.easeInOut});
+
+
+    var PathTextHook2 = new ScrollMagic.Scene({
+      offset: 1400,
+      triggerHook: 0.2,
+      duration: "75%"
+    }).setPin("#PMove2", {pushFollowers: false})
+      .setTween(tween29)
+      // .addIndicators({
+      //   name: 'PMove2',
+      //   colorTrigger: 'black',
+      //   indent: 350
+      // })
+      .addTo(controller);
+
+    var PathTextHook22 = new ScrollMagic.Scene({
+      offset: 2103,
+      triggerHook: 0.2,
+      duration: "125%"
+    }).setPin("#PMove2", {pushFollowers: false})
+      // .addIndicators({
+      //   name: 'PMove22 Pin',
+      //   colorTrigger: 'black',
+      //   indent: 250
+      // })
+      .addTo(controller);
+
+    var PMaze1 = document.getElementById('PMaze1');
+    var tween34 = TweenMax.from(PMaze1, 1, {opacity: 0, ease:Power1.easeInOut});
+
+    var PathTextHook31 = new ScrollMagic.Scene({
+      offset: 3800,
+      triggerHook: 0.2,
+      duration: "30%"
+    }).setPin("#PMaze1", {pushFollowers: false})
+      .setTween(tween34)
+      // .addIndicators({
+      //   name: 'PMaze1 Fadein',
+      //   colorTrigger: 'black',
+      //   indent: 250
+      // })
+      .addTo(controller);
+
+    var PathTextHook32 = new ScrollMagic.Scene({
+      offset: 4081,
+      triggerHook: 0.2,
+      duration: "274.8%"
+    }).setPin("#PMaze1", {pushFollowers: false})
+      // .addIndicators({
+      //   name: 'PMaze1 Pin',
+      //   colorTrigger: 'black',
+      //   indent: 350
+      // })
+      .addTo(controller);
+
+    var PMaze2 = document.getElementById('PMaze2');
+    var tween35 = TweenMax.from(PMaze2, 1, {opacity: 0, ease:Power1.easeInOut});
+
+    var PathTextHook41 = new ScrollMagic.Scene({
+      offset: 3800,
+      triggerHook: 0.2,
+      duration: "30%"
+    }).setPin("#PMaze2", {pushFollowers: false})
+      .setTween(tween35)
+      // .addIndicators({
+      //   name: 'PMaze2 Fadein',
+      //   colorTrigger: 'black',
+      //   indent: 100
+      // })
+      .addTo(controller);
+
+    var PathTextHook42 = new ScrollMagic.Scene({
+      offset: 4081,
+      triggerHook: 0.2,
+      duration: "274.8%"
+    }).setPin("#PMaze2", {pushFollowers: false})
+      // .addIndicators({
+      //   name: 'PMaze2 Pin',
+      //   colorTrigger: 'black',
+      //   indent: 0
+      // })
+      .addTo(controller);
+
+    var UnitCol = document.getElementById('UnitCol');
+    var tween36 = TweenMax.from(UnitCol, 1, {opacity: 0, y: 200, ease:Power3.easeInOut});
+
+    var UnitColHook = new ScrollMagic.Scene({
+      offset: 7340,
+      triggerHook: 0.2,
+    }).setTween(tween36)
+      // .addIndicators({
+      //   name: 'UnitLogo Fade',
+      //   colorTrigger: 'black',
+      //   indent: 270
+      // })
+      .addTo(controller);
+
+    var ShakeCol = document.getElementById('ShakeCol');
+    var tween37 = TweenMax.from(ShakeCol, 1, {opacity: 0, y: 200, ease:Power3.easeInOut});
+
+    var ShakeColHook = new ScrollMagic.Scene({
+      offset: 7440,
+      triggerHook: 0.2,
+    }).setTween(tween37)
+      // .addIndicators({
+      //   name: 'ShakeLogo Fade',
+      //   colorTrigger: 'black',
+      //   indent: 140
+      // })
+      .addTo(controller);
+
+    var BookCol = document.getElementById('BookCol');
+    var tween38 = TweenMax.from(BookCol, 1, {opacity: 0, y: 200, ease:Power3.easeInOut});
+
+    var BookColHook = new ScrollMagic.Scene({
+      offset: 7540,
+      triggerHook: 0.2,
+    }).setTween(tween38)
+      // .addIndicators({
+      //   name: 'BookCol Fade',
+      //   colorTrigger: 'black',
+      //   indent: 0
+      // })
+     .addTo(controller);
+
+    var DownloadTitle = document.getElementById('DownloadTitle');
+    var tween39 = TweenMax.from(DownloadTitle, 0.75, {opacity: 0, y: 150, ease:Power3.easeInOut});
+
+    var DownloadTitleHook = new ScrollMagic.Scene({
+      offset: 8538,
+      triggerHook: 0.2,
+    }).setTween(tween39)
+      // .addIndicators({
+      //   name: 'DownloadTitle Fade',
+      //   colorTrigger: 'black',
+      //   indent: 100
+      // })
+      .addTo(controller);
+
+    var LabGitHub = document.getElementById('LabGitHub');
+    var tween40 = TweenMax.from(LabGitHub, 0.75, {opacity: 0, y: 150, ease:Power3.easeInOut});
+
+    var LabGitHubHook = new ScrollMagic.Scene({
+      offset: 8580,
+      triggerHook: 0.2,
+    }).setTween(tween39)
+      // .addIndicators({
+      //   name: 'GitHub Fade',
+      //   colorTrigger: 'black',
+      //   indent: 250
+      // })
+      .addTo(controller);
+
+});
+
+var isInnerPage = false; //If the user is in an inner page (one of the expanded project pages) then the user will be halted when scrolling passed the end below.
+
+//Stops scrolling after scrollPoint variable.
+$(function() {
+  var scrollPoint = 8700;
+  var scrolledPast = false;
+  $(window).scroll(function() {
+      $(window).scrollTop() < scrollPoint  && isInnerPage ? scrolledPast = true : '';
+      $(window).scrollTop() > scrollPoint && scrolledPast &isInnerPage == true ? $(window).scrollTop(scrollPoint) : '';
+  }).scroll();
+});
+
+var WSCONST = 1950;
+
+function AnchorToX(id){
+  if(id == "#LabFull"){ return 4580; }
+  else if(id == "#LabTab"){ return 0;}
+  else{ alert('None Sorry X'); }
+}
+
+function AnchorToY(id){
+  if(id == "#LabFull"){ return 0; }
+  else if(id == "#LabTab"){ return 7900; }
+  else{ alert('None Sorry Y'); }
+}
+
+var tl = new TimelineLite();
+
+controller.scrollTo(function(xval,yval) {
+  if(window.scrollY <= 7075 && !isInnerPage){ return; }
+
+  tl.to(window, 2, { scrollTo : {x : WSCONST }, ease : Power2.easeIn})
+    .to(window, 0.001, { scrollTo : {y : yval }, ease : Power4.easeInOut})
+    .to(window, 2, { scrollTo : {x : xval }, ease : Power2.easeOut});
+
+});
+
+$(document).on("click", 'a[href^=\\#]', function(e) {
+  var id = $(this).attr("href"); // grab the href attribute value
+  var xval = AnchorToX(id);
+  var yval = AnchorToY(id);
+  
+  if($(id).length > 0) {
+    // prevents default behavior of links.
+    e.preventDefault();
+    
+    // trigger scroll
+    controller.scrollTo(xval,yval);
+    // controller.scrollTo(xval,yval);
+  }
+  isInnerPage = !isInnerPage;
 });

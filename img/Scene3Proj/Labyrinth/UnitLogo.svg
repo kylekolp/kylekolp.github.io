@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="258" height="320" viewBox="0 0 258 320">
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="97.856" height="185.011" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Unit_Logo" data-name="Unit Logo" transform="translate(-283 -2528)">
+    <g id="Rectangle_43" data-name="Rectangle 43" transform="translate(283 2528)" fill="#fff" stroke="#4c95c5" stroke-width="9">
+      <rect width="258" height="320" rx="17" stroke="none"/>
+      <rect x="4.5" y="4.5" width="249" height="311" rx="12.5" fill="none"/>
+    </g>
+    <g id="Repeat_Grid_1" data-name="Repeat Grid 1" transform="translate(392.775 2593.764)" clip-path="url(#clip-path)">
+      <g transform="translate(-392.5 -2594.5)">
+        <line id="Line_1" data-name="Line 1" x2="94" transform="translate(401.5 2599.5)" fill="none" stroke="#598599" stroke-width="10"/>
+      </g>
+      <g transform="translate(-392.5 -2519.5)">
+        <line id="Line_1-2" data-name="Line 1" x2="94" transform="translate(401.5 2599.5)" fill="none" stroke="#598599" stroke-width="10"/>
+      </g>
+      <g transform="translate(-392.5 -2444.5)">
+        <line id="Line_1-3" data-name="Line 1" x2="94" transform="translate(401.5 2599.5)" fill="none" stroke="#598599" stroke-width="10"/>
+      </g>
+    </g>
+    <path id="Check_1" data-name="Check 1" d="M373.547,2566.588l-24.027,56.043L327.47,2609l2.25-14.724L346.82,2609l22.391-44.97Z" transform="translate(0.923 4.103)" fill="#40d9a0"/>
+    <path id="Check_2" data-name="Check 2" d="M373.547,2566.588l-24.027,56.043L327.47,2609l2.25-14.724L346.82,2609l22.391-44.97Z" transform="translate(0.923 85.22)" fill="#40d9a0"/>
+    <g id="X" transform="translate(333.951 2738.075)">
+      <line id="Line_2" data-name="Line 2" x2="37.052" y2="40.852" fill="none" stroke="#fd6467" stroke-width="9"/>
+      <line id="Line_3" data-name="Line 3" x1="37.052" y2="40.852" fill="none" stroke="#fd6467" stroke-width="9"/>
+    </g>
+  </g>
+</svg>

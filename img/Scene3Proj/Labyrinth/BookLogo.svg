@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="257.999" height="320" viewBox="0 0 257.999 320">
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="91.628" height="90.244" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Book" transform="translate(-1302 -2458)">
+    <rect id="Rectangle_45" data-name="Rectangle 45" width="45.706" height="289.505" rx="13" transform="translate(1302 2458)" fill="#a23436"/>
+    <rect id="Rectangle_44" data-name="Rectangle 44" width="220.055" height="260.577" transform="translate(1339.082 2458)" fill="#ee5d60"/>
+    <path id="Rectangle_46" data-name="Rectangle 46" d="M19,0H257.138a0,0,0,0,1,0,0V59.5a0,0,0,0,1,0,0H19a19,19,0,0,1-19-19V19A19,19,0,0,1,19,0Z" transform="translate(1302 2718.496)" fill="#fe999b"/>
+    <path id="Rectangle_47" data-name="Rectangle 47" d="M19,0H246.789a0,0,0,0,1,0,0V43.981a0,0,0,0,1,0,0H19a19,19,0,0,1-19-19V19A19,19,0,0,1,19,0Z" transform="translate(1312.349 2726.257)" fill="#fff3f4"/>
+    <rect id="Rectangle_48" data-name="Rectangle 48" width="4.899" height="43.981" transform="translate(1555.101 2726.257)" fill="#fff"/>
+    <g id="Cup" transform="translate(1371.104 2594.478)">
+      <rect id="Rectangle_50" data-name="Rectangle 50" width="15.523" height="52.271" transform="translate(23.622 13.798)" fill="#feb3b5"/>
+      <ellipse id="Ellipse_14" data-name="Ellipse 14" cx="23.825" cy="26.135" rx="23.825" ry="26.135" transform="translate(0 13.798)" fill="#feb3b5"/>
+      <ellipse id="Ellipse_15" data-name="Ellipse 15" cx="14.338" cy="15.787" rx="14.338" ry="15.787" transform="translate(9.486 24.147)" fill="#ee5d60"/>
+      <path id="Rectangle_49" data-name="Rectangle 49" d="M5.356,0H96.405a5.356,5.356,0,0,1,5.356,5.356V44.844A50.881,50.881,0,0,1,50.881,95.724h0A50.881,50.881,0,0,1,0,44.844V5.356A5.356,5.356,0,0,1,5.356,0Z" transform="translate(26.09)" fill="#fff3f4"/>
+      <path id="Rectangle_51" data-name="Rectangle 51" d="M6,0H95.761a6,6,0,0,1,6,6v4.349a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V6A6,6,0,0,1,6,0Z" transform="translate(26.09)" fill="#feb3b5"/>
+    </g>
+    <g id="Repeat_Grid_2" data-name="Repeat Grid 2" transform="translate(1407.223 2497.06)" clip-path="url(#clip-path)">
+      <g transform="translate(-1425.175 -2499.049)">
+        <path id="Path_39" data-name="Path 39" d="M1465.666,2459.193c9.694,12.5,8.046,23.846,3.856,27.94s-6.764,4.242-11.514,11.415,4.75,25.106,4.75,25.106" transform="translate(-23.439 60.201)" fill="none" stroke="#feb3b5" stroke-width="7" opacity="0.8"/>
+      </g>
+      <g transform="translate(-1393.175 -2499.049)">
+        <path id="Path_39-2" data-name="Path 39" d="M1465.666,2459.193c9.694,12.5,8.046,23.846,3.856,27.94s-6.764,4.242-11.514,11.415,4.75,25.106,4.75,25.106" transform="translate(-23.439 60.201)" fill="none" stroke="#feb3b5" stroke-width="7" opacity="0.8"/>
+      </g>
+      <g transform="translate(-1361.175 -2499.049)">
+        <path id="Path_39-3" data-name="Path 39" d="M1465.666,2459.193c9.694,12.5,8.046,23.846,3.856,27.94s-6.764,4.242-11.514,11.415,4.75,25.106,4.75,25.106" transform="translate(-23.439 60.201)" fill="none" stroke="#feb3b5" stroke-width="7" opacity="0.8"/>
+      </g>
+    </g>
+    <text id="J" transform="translate(1414.096 2596.391)" fill="#f96d70" font-size="73" font-family="RobotoSlab-Bold, Roboto Slab" font-weight="700" letter-spacing="-0.071em"><tspan x="16.256" y="76">J</tspan></text>
+  </g>
+</svg>

@@ -1,6 +1,5 @@
 body{
-    overflow: scroll;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     animation: ScrollDelay 4.25s ease-in-out 0s forwards;
 }
 
@@ -83,19 +82,8 @@ svg {
     background-size: 90% 90%;
     background-repeat: no-repeat;
     background-image: url("img/Scene1/Pose1.svg");
+    opacity: 1;
     z-index: 0;
-}
-
-#TriggerScene1 {
-    position: absolute;
-    top: 94px;
-    left: 900px;
-}
-
-#TriggerPose {
-    position: absolute;
-    top: 900px;
-    left: 900px;
 }
 
 #Scene2 {
@@ -111,6 +99,10 @@ svg {
     left: 1000px;
     background-image: url("img/Scene2/BlueCurve2.svg");
     z-index: 0;
+}
+
+#BlueCurve2.Invisible {
+    opacity: 0;
 }
 
 .About {
@@ -257,6 +249,280 @@ svg {
     background-repeat: no-repeat;
     background-image: url("img/Scene3/LabyrinthLogo.svg");
     z-index: 1;
+}
+
+#Labbutton {
+    position: absolute;
+    padding: 0;
+    border: none;
+    background: none;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+    text-align: center;
+    color: rgba(0,0,0,.82);
+    font-size: 20px;
+    top: 290px;
+    left: 122.5px;
+    opacity: 0;
+    z-index: 7;
+}
+
+#Labbutton:active {
+    border: none;
+    background: none;
+    color: #fff;
+}
+
+#Labbutton:hover {
+    cursor:pointer;
+}
+
+#Labbutton:focus {
+    outline: none;
+}
+
+#LabFull {
+    position: absolute;
+    top: -450px; /* -650  in scene 3*/
+    left: 4300px; /* 600 */
+    z-index: 7; 
+}
+
+#LabBackButton {
+    position: absolute;
+    top: 1300px;
+    left: 1150px;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+    color: #555555;
+    font-size: 33px;
+    letter-spacing: -0.071em;
+    z-index: 4;
+}
+
+#RedCloud {
+    position: relative;
+    width: 2600px;
+    height: 1803px;
+    background-image: url("img/Scene3Proj/Labyrinth/RedCloud.svg");
+    z-index: 0;
+}
+
+#LabGrid {
+    position: absolute;
+    top: 650px;
+    left: 1450px;
+    width: 567.18px;
+    height: 563.16px;
+    background-image: url("img/Scene3Proj/Labyrinth/LabGrid.svg");
+    z-index: 1;
+}
+
+#LabGrid.Pose2 {
+    background-image: url("img/Scene3Proj/Labyrinth/LabGrid2.svg");
+}
+
+#LabGrid.Pose3 {
+    background-image: url("img/Scene3Proj/Labyrinth/LabGrid3.svg");
+}
+
+#LabExtTitle{
+    position: absolute;
+    top: 800px;
+    left: 650px;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+    font-size: 140px;
+    letter-spacing: -0.087em;
+    z-index: 1;
+}
+
+#LabExtDate{
+    position: absolute;
+    top: 650px;
+    left: 450px;
+    width: 216px;
+    height: 193px;
+    background-size: 95% 95%;
+    background-repeat: no-repeat;
+    background-image: url("img/Scene3Proj/Labyrinth/LabDate.svg");
+    z-index: 1;
+}
+
+#LabSubTitle{
+    position: absolute;
+    top: 1000px;
+    left: 650px;
+    color: #fff;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 300;
+    font-size: 52px;
+    text-align: left;
+    letter-spacing: -0.087em;
+    z-index: 1;
+}
+
+#PlayerToken {
+    position: absolute;
+    top: 45px;
+    left: 45px;
+    width: 120px;
+    height: 120px;
+    background-image: url("img/Scene3Proj/Labyrinth/Player.svg");
+    z-index: 3;
+}
+
+#PlayerPath {
+    position: absolute;
+    top: 75px;
+    left: 105px;
+    width: 365px;
+    height: 420px;
+    background-repeat: no-repeat;
+    background-image: url("img/Scene3Proj/Labyrinth/Path.svg");
+    z-index: 2;
+}
+
+#Key {
+    position: absolute;
+    top: 415px;
+    left: 405px;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+    font-size: 65px;
+    letter-spacing: -0.087em;
+    z-index: 2;
+}
+
+#PMove1 {
+    position: absolute;
+    top: 2100px;
+    left: 460px;
+    color: #555555;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 300;
+    font-size: 40px;
+    text-align: left;
+    letter-spacing: -0.087em;
+    white-space: nowrap;
+    z-index: 2;
+}
+
+#PMove2 {
+    position: absolute;
+    top: 2300px;
+    left: 460px;
+    color: #555555;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 300;
+    font-size: 40px;
+    text-align: left;
+    letter-spacing: -0.087em;
+    white-space: nowrap;
+    z-index: 2;
+}
+
+#PMaze1 {
+    position: absolute;
+    top: 4500px;
+    left: 460px;
+    color: #555555;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 300;
+    font-size: 40px;
+    text-align: left;
+    letter-spacing: -0.087em;
+    white-space: nowrap;
+    z-index: 2;
+}
+
+#PMaze2 {
+    position: absolute;
+    top: 4700px;
+    left: 460px;
+    color: #555555;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 300;
+    font-size: 40px;
+    text-align: left;
+    letter-spacing: -0.087em;
+    white-space: nowrap;
+    z-index: 2;
+}
+
+#learnSection {
+    position: absolute;
+    top: 8050px;
+    left: 350px;
+    color: #555555;
+    font-family: 'Roboto Slab', serif; 
+    text-align: center;
+}
+
+#LearnHeader {
+    text-align: center;
+    font-weight: 700;
+    font-size: 50px;
+    padding: 60px 38px 0px 0px;
+    z-index: 2;
+}
+
+.LearnTitle {
+    font-weight: 200;
+    font-size: 40px;
+    padding: 0px 0px 20px 0px;
+    margin: auto;
+    z-index: 2;
+}
+
+.LearnDesc {
+    font-weight: 200;
+    font-size: 24px;
+    margin: auto;
+    z-index: 2;
+}
+
+.LearnContainer {
+    display: inline-block;
+    vertical-align: top;
+    padding: 140px 105px 50px 105px;
+}
+
+#GridBanner {
+    position: absolute;
+    top: 9200px;
+    width: 2277.32px;
+    height: 784px;
+    background-repeat: no-repeat;
+    background-image: url("img/Scene3Proj/Labyrinth/GridBanner.svg");
+    z-index: 0;
+}
+
+#DownloadTitle {
+    position: absolute;
+    top: 50px;
+    left: 700px;
+    color: #555555;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+    font-size: 96px;
+    letter-spacing: -0.087em;
+    z-index: 2;
+}
+
+#LabGitHub {
+    position: absolute;
+    top: 300px;
+    left: 850px;
+    width: 800px;
+    height: 260px;
+    background-repeat: no-repeat;
+    background-image: url("img/Scene3Proj/Labyrinth/LabGithub.svg");
+}
+
+#LabGitHub:active {
+    top: 320px;
+    background-image: url("img/Scene3Proj/Labyrinth/LabGithub2.svg");
 }
 
 #IntTab {
@@ -509,7 +775,7 @@ svg {
 #WhitePanel {
     position: absolute;
     top: -945px;
-    left: 30px;
+    left: 35px;
     width: 1905px;
     height: 1000px;
     background-color: #fff;
