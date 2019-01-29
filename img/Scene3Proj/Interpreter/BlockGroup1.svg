@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="582.431" height="325.448" viewBox="0 0 582.431 325.448">
+  <g id="Code_Block_1" data-name="Code Block 1" transform="translate(-688.201 -1513)">
+    <g id="Input" transform="translate(688.201 1513)">
+      <path id="Path_63" data-name="Path 63" d="M26.935,0H288.708c14.876,0,26.935,11.513,26.935,25.714V299.733c0,14.2-12.059,25.714-26.935,25.714H26.935C12.059,325.448,0,313.935,0,299.733V25.714C0,11.513,12.059,0,26.935,0Z" transform="translate(0)" fill="#556b6d" opacity="0.85"/>
+    </g>
+    <g id="Input_Text" data-name="Input Text">
+      <text id="Input:" transform="translate(728.218 1526.661)" fill="#fff" font-size="38" font-family="RobotoSlab-Light, Roboto Slab" font-weight="300" letter-spacing="-0.089em"><tspan x="0" y="40">Input:</tspan></text>
+      <text id="push_hello_push_a_push_4" data-name="push &quot;hello&quot;
+push a
+push 4" transform="translate(733.218 1620.679)" fill="#fff" font-size="28" font-family="RobotoSlab-Light, Roboto Slab" font-weight="300" letter-spacing="-0.089em"><tspan x="0" y="29">push &quot;hello&quot;</tspan><tspan x="0" y="84">push a</tspan><tspan x="0" y="139">push 4</tspan></text>
+    </g>
+    <g id="Block" transform="translate(727.415 1513)">
+      <path id="Path_63-2" data-name="Path 63" d="M25.714,0H275.626A25.714,25.714,0,0,1,301.34,25.714V299.733a25.714,25.714,0,0,1-25.714,25.714H25.714A25.714,25.714,0,0,1,0,299.733V25.714A25.714,25.714,0,0,1,25.714,0Z" transform="translate(241.876)" fill="#578184" opacity="0.85"/>
+      <text id="_-_-_-_-_-_-_-_-_-_-_-_" data-name="-  -  -  -  -  -  -  -  -  -  - " transform="translate(269.197 261.965)" fill="#fff" font-size="40" font-family="RobotoSlab-Light, Roboto Slab" font-weight="300" letter-spacing="-0.089em"><tspan x="0" y="42" xml:space="preserve">-  -  -  -  -  -  -  -  -  -  - </tspan></text>
+      <text id="_-_-_-_-_-_-_-_-_-_-_-" data-name="-  -  -  -  -  -  -  -  -  -  -" transform="translate(0 261.965)" fill="#fff" font-size="40" font-family="RobotoSlab-Light, Roboto Slab" font-weight="300" letter-spacing="-0.089em"><tspan x="0" y="42" xml:space="preserve">-  -  -  -  -  -  -  -  -  -  -</tspan></text>
+      <text id="_-_-_-_-_-_-_-_-_-_-_--2" data-name="-  -  -  -  -  -  -  -  -  -  -" transform="translate(269.197 57.054)" fill="#fff" font-size="40" font-family="RobotoSlab-Light, Roboto Slab" font-weight="300" letter-spacing="-0.089em"><tspan x="0" y="42" xml:space="preserve">-  -  -  -  -  -  -  -  -  -  -</tspan></text>
+      <text id="_-_-_-_-_-_-_-_-_-_-_--3" data-name="-  -  -  -  -  -  -  -  -  -  -" transform="translate(0 57.054)" fill="#fff" font-size="40" font-family="RobotoSlab-Light, Roboto Slab" font-weight="300" letter-spacing="-0.089em"><tspan x="0" y="42" xml:space="preserve">-  -  -  -  -  -  -  -  -  -  -</tspan></text>
+    </g>
+    <g id="Output_Text" data-name="Output Text">
+      <text id="Stack:" transform="translate(1009.469 1526.661)" fill="#fff" font-size="38" font-family="RobotoSlab-Light, Roboto Slab" font-weight="300" letter-spacing="-0.089em"><tspan x="0" y="40">Stack:</tspan></text>
+      <text id="String_hello_Name_a_Int_4" data-name="String &quot;hello&quot;
+Name &quot;a&quot;
+Int 4" transform="translate(1009.469 1620.679)" fill="#fff" font-size="28" font-family="RobotoSlab-Light, Roboto Slab" font-weight="300" letter-spacing="-0.089em"><tspan x="0" y="29">String &quot;hello&quot;</tspan><tspan x="0" y="84">Name &quot;a&quot;</tspan><tspan x="0" y="139">Int 4</tspan></text>
+    </g>
+    <text id="_" data-name="=&gt;" transform="translate(917.533 1638.809)" fill="#fff" font-size="50" font-family="RobotoSlab-Light, Roboto Slab" font-weight="300" letter-spacing="-0.089em" opacity="0.74"><tspan x="0" y="64">=</tspan><tspan y="64" font-size="61">&gt;</tspan></text>
+  </g>
+</svg>

@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1170" height="1025" viewBox="0 0 1170 1025">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.663" y1="0.6" x2="0.666" y2="0.602" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#8ad5b9"/>
+      <stop offset="1" stop-color="#82bfa9"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0.924" y1="0.534" x2="0.743" y2="0.531" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#afd6c8"/>
+      <stop offset="1" stop-color="#8ad5b9" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <g id="Code_Panel" data-name="Code Panel" transform="translate(-880 -1148)">
+    <g id="Rectangle_65" data-name="Rectangle 65" transform="translate(880 1148)" stroke="rgba(112,112,112,0.26)" stroke-width="26" fill="url(#linear-gradient)">
+      <rect width="1128" height="1025" rx="98" stroke="none"/>
+      <rect x="13" y="13" width="1102" height="999" rx="85" fill="none"/>
+    </g>
+    <text id="type_stringArray_:_1_-_string_:_hello_type_real2int_:_real:_r_-_integer_type_getIntArray_:_integer:_p00_integer:_p01_integer:_p10_integer:_p11_-_intArray_function_getInt:_real2int_getInt_:_r2i_r_function_sa" data-name="type stringArray : 1 -&gt; string : ( &quot;hello&quot; )
+
+type real2int : ( real: r ) -&gt; integer
+
+type getIntArray : ( integer: p00, integer: p01, integer: p10, integer: p11 )
+                 -&gt; intArray
+
+function getInt: real2int {
+   getInt := r2i r;
+}
+
+function sa" transform="translate(960 1220)" fill="#fff" font-size="46" font-family="RobotoSlab-Light, Roboto Slab" font-weight="300" letter-spacing="-0.119em"><tspan x="0" y="48">type stringArray : 1 -&gt; string : ( &quot;hello&quot; )</tspan><tspan x="0" y="89"></tspan><tspan x="0" y="130">type real2int : ( real: r ) -&gt; integer</tspan><tspan x="0" y="171"></tspan><tspan x="0" y="212">type getIntArray : ( integer: p00, integer: p01, integer: p10, integer: p11 )</tspan><tspan x="0" y="253" xml:space="preserve">                 -&gt; intArray</tspan><tspan x="0" y="294"></tspan><tspan x="0" y="335">function getInt: real2int {</tspan><tspan x="0" y="376" xml:space="preserve">   getInt := r2i r;</tspan><tspan x="0" y="417">}</tspan><tspan x="0" y="458"></tspan><tspan x="0" y="499">function sayHello : noInput {</tspan><tspan x="0" y="540" xml:space="preserve">   sayHello := &quot;Hello!&quot;;</tspan><tspan x="0" y="581">}</tspan><tspan x="0" y="622"></tspan><tspan x="0" y="663">{ </tspan><tspan x="0" y="704" xml:space="preserve"> [ integer: i, x; string: s, s1; real: r, r1; Boolean: b, b1; character: c, c1;</tspan><tspan x="0" y="745" xml:space="preserve">   intArray: ia, ia1; stringArray: sa ]</tspan><tspan x="0" y="786"></tspan><tspan x="0" y="827" xml:space="preserve">   ia := initializeIntArray(1, 2, 3, 4);</tspan></text>
+    <rect id="Rectangle_66" data-name="Rectangle 66" width="1044" height="1025" transform="translate(880 1148)" fill="url(#linear-gradient-2)"/>
+  </g>
+</svg>

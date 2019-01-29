@@ -48,6 +48,7 @@
     <div id="Scene3">
         <div class="Network" id="Network"></div>
         <div id="BackTab1"></div>
+        <div id="Back"></div>
         <div id="LabTab">
             <div id="RedSplat"></div>
             <div id="LabDate"></div>
@@ -60,15 +61,17 @@
                 <div id="BlueSplat"></div>
                 <div id="IntDate"></div>
                 <h3 id="LabTitle">Interpreter</h3>
-                <p id="LabDesc">Lorem ipsum dolor sit amet, consectetur<br>adipiscing elit, sed do eiusmod tempor<br>incididunt ut labore et dolore magna aliqua. Ut<br>enim ad minim veniam, quis</p>
+                <p id="LabDesc">A pseudo compiler for a custom made<br> stack based programming language with variable<br> binding, scope handling, and function definition<br> support written in both Standard ML and Java.</p>
                 <div id="IntLogo"></div>
+                <a href="#IntFull" id="Intbutton">Read More >></a>
         </div>
         <div id="CompTab">
                 <div id="GreenSplat"></div>
                 <div id="CompDate"></div>
                 <h3 id="LabTitle">Compiler</h3>
-                <p id="LabDesc">Lorem ipsum dolor sit amet, consectetur<br>adipiscing elit, sed do eiusmod tempor<br>incididunt ut labore et dolore magna aliqua. Ut<br>enim ad minim veniam, quis</p>
+                <p id="LabDesc">A C Compiler Written in Standard ML with the<br> Mlton compiler designed to be used with<br> SmallPond a Java based virtual envionment<br> with minor code optimizations</p>
                 <div id="CompLogo"></div>
+                <a href="#CompFull" id="Compbutton">Read More >></a>
         </div>
         <div id="AlgoTab">
             <div id="YellowSplat"></div>
@@ -80,7 +83,7 @@
         <div id="BackTab2"></div>
     </div>
     <div id="LabFull">
-        <a href="#LabTab" id="LabBackButton"><< Back</a>
+        <a href="#Back" id="LabBackButton"><< Back</a>
         <div id="RedCloud"></div>
         <div id="LabGrid">
             <div id="PlayerToken"></div>
@@ -113,12 +116,56 @@
                     <p class="LearnDesc">Developed proper code organization<br>skills through practicing object<br>oriented programming techniques<br>including class layouts, multiple file<br>management, and experience in the<br>Java language</p>
                 </div>
         </div>
-
         <div id="GridBanner">
             <h4 id="DownloadTitle">Click to check out the Project</h4>
             <a id="LabGitHub" href="https://github.com/kpack18/School/tree/master/Labyr" target="_blank"></a>
         </div>
     </div>
+
+    <div id=IntFull>
+        <div id="BlueCloud"></div>
+    
+        <div id="BannerBody">
+            <div id="IntExtTitle">Interpreter</div>
+            <p id="IntSubTitle">A Reduced Compiler for a Custom<br>Stack Based Language.</p>
+            <div id="IntExtDate"></div>
+            <div id="IntExtLogo"></div>
+        </div>
+        <div id="MainBody">
+            <p class="IntBody" id="Body1">The Interpreter uses an Internal Stack to<br>store it's data, variables, and functions.</p>
+            <div id="CodeBlock1"></div>
+            <p class="IntBody" id="Body2">Value's on the stack can be combined arithmetically, bound to<br>variables, or used in Boolean expessions.</p>
+            <div id="CodeBlock2"></div>
+            <p class="IntBody" id="Body3">With all of the core necessities for a programming language the<br>Possibilities are Endless.</p>
+            <div id="CodeBlock3"></div>
+            <div id="CodeBackground"></div>
+            <div id="learnSection2">
+                    <div id="LearnHeader">What I Learned:</div>
+                <div id="Cols">
+                    <div id="LambdaCol" class="LearnContainer">
+                        <img src="img/Scene3Proj/Interpreter/LambdaLogo.svg" style="transform: scale(0.75);">
+                        <h6 class="LearnTitle Lambda">Functional Programming</h6>
+                        <p class="LearnDesc Lambda">Building one of the two forms<br>of the project in a functional<br>programming language, SML,<br>showed me a completely new<br>way of thinking about<br>software development and<br>challenged me greatly when<br>completing this project.</p>
+                    </div>
+                    <div id="ClockCol"  class="LearnContainer">
+                        <img src="img/Scene3Proj/Interpreter/ClockLogo.svg" style="transform: scale(0.75);">
+                        <h6 class="LearnTitle Clock">Time Management</h6>
+                        <p class="LearnDesc Clock">Since there were no intermediate<br>due dates I needed to Individually<br>Planning out the development and<br>organization of a larger scale project<br>and manage my own time in<br>completing each section in a<br>timely manner.</p>
+                    </div>
+                    <div id="BulbCol" class="LearnContainer">
+                        <img src="img/Scene3Proj/Interpreter/LightBulbLogo.svg" style="transform: scale(0.75);">
+                        <h6 class="LearnTitle Bulb">Language Study</h6>
+                        <p class="LearnDesc Bulb">Building the project in both Standard<br>ML and Java taught me the importance<br>of choosing the correct tools for the<br>job as each project had it's own<br>unique challenges and solutions as a<br>result of the different trade offs of<br>each programming language.</p>
+                    </div>
+                </div>
+            </div>
+            <div id="GridBanner2">
+                    <h4 id="DownloadTitle2">Click to check out the Project</h4>
+                    <a id="LabGitHub2" href="https://github.com/kpack18/School" target="_blank"></a>
+            </div>
+        </div>
+    </div>
+
     <div id="Scene5">
             <div id="Contact">Want to know more?</div>
             <div id="InfoTab"></div>
@@ -161,5 +208,49 @@
             </div>
         </div>
     </div>
+
+    <div id="CompFull">
+        <div id="GreenCloud"></div>
+        <div id="CompExtTitle">Compiler</div>
+        <p id="CompSubTitle">A compact C Compiler for a Java<br>based Virtual Environment.</p>
+        <div id="CompExtLogo"></div>
+        <div id="CompExtDate"></div>
+        <p id="CompText1">The compiler project was<br>written in standard ML and<br>designed to run a custom<br> language somewhat similar to C.</p>
+        <p id="CompText2">Through it's creation we studied<br>the 6 steps of the compilation<br>process:</p>
+        <div id="CompText3">
+            <p id="CompText31" class="CText">Lexical Analysis</p>
+            <p id="CompText32" class="CText">Semantic Analysis</p>
+            <p id="CompText33" class="CText">Intermediate Code Generation</p>
+            <p id="CompText34" class="CText">Machine Code Translation</p>
+        </div>
+        <p id="CompText4">The Amount of complexity in the compilation<br>process gives you a new perspective on<br>programming</p>
+        <p id="CompText5">This Taught me a lot how lower end processing<br>and the organization of different<br>computing systems</p>
+        <div id="CompBlock1"></div>
+        <div id="CompBlock2"></div>
+        <div id="learnSection2">
+            <div id="LearnHeader">What I Learned:</div>
+        <div id="Cols">
+            <div id="SwitchCol" class="LearnContainer">
+                <img src="img/Scene3Proj/Compiler//SwitchLogo.svg" style="transform: scale(0.75);">
+                <h6 class="LearnTitle Switch">Compiling Techniques</h6>
+                <p class="LearnDesc Switch">Studied the strategies used in<br>compiling languages<br>including code optimization,<br>Intermediate representations<br>and semantic analysis.<br>Also learned several compiling<br>tools including ML Lex and<br>Yacc lexical analyzer/parser.</p>
+            </div>
+            <div id="PencilCol"  class="LearnContainer">
+                <img src="img/Scene3Proj/Compiler//PencilLogo.svg" style="transform: scale(0.75);">
+                <h6 class="LearnTitle Pencil">Programming Theory</h6>
+                <p class="LearnDesc Pencil">Studied the theory behind the<br>development of programming<br>languages including Chomsky's<br>hierarchy of grammars, meta<br>languages, and the syntax and<br>semantics of programming. This<br>theory was then applied to<br>development at each stage of compilation.</p>
+            </div>
+            <div id="CapCol" class="LearnContainer">
+                <img src="img/Scene3Proj/Compiler//CapLogo.svg" style="transform: scale(0.75);">
+                <h6 class="LearnTitle Cap">Joint Class Project</h6>
+                <p class="LearnDesc Cap">Cooperating with Computer<br>Engineering Course to design the<br>aspects of the virtual environment<br>including register sizes, available<br>instructions and more.This helped<br>developed communication skills with<br>team members with different skill<br>sets then my own.</p>
+            </div>
+        </div>
+        <div id="GridBanner3">
+            <h4 id="DownloadTitle3">Click to check out the Project</h4>
+            <a id="LabGitHub3" href="https://github.com/kpack18/School/tree/master/Compiler" target="_blank"></a>
+        </div>
+    </div>
+    
 </body>
 </html>

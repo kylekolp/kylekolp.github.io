@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1429.036" height="479.227" viewBox="0 0 1429.036 479.227">
+  <g id="BlockGroup3" transform="translate(-197.201 -2186)">
+    <g id="Square_Fun_Block" data-name="Square Fun Block" transform="translate(197.201 2255)">
+      <g id="Input" transform="translate(0 0.046)">
+        <path id="InputBox" d="M16.352,0H175.273c9.031,0,16.352,14.51,16.352,32.409V377.771c0,17.9-7.321,32.409-16.352,32.409H16.352C7.321,410.18,0,395.67,0,377.771V32.409C0,14.51,7.321,0,16.352,0Z" transform="translate(0 0)" fill="#556b6d" opacity="0.85"/>
+        <text id="fun_square_z_push_z_push_z_mul_return_funEnd_push_z_push_4_bind" data-name="fun square z
+push z
+push z
+mul
+return
+funEnd
+push z
+push 4
+bind" transform="translate(30.036 54.622)" fill="#fff" font-size="20" font-family="RobotoSlab-Light, Roboto Slab" font-weight="300" letter-spacing="-0.089em"><tspan x="0" y="21">fun square z</tspan><tspan x="0" y="58">push z</tspan><tspan x="0" y="95">push z</tspan><tspan x="0" y="132">mul</tspan><tspan x="0" y="169">return</tspan><tspan x="0" y="206">funEnd</tspan><tspan x="0" y="243">push z</tspan><tspan x="0" y="280">push 4</tspan><tspan x="0" y="317">bind</tspan></text>
+        <text id="Input_:" data-name="Input :" transform="translate(30.478 6.885)" fill="#fff" font-size="29" font-family="RobotoSlab-Light, Roboto Slab" font-weight="300" letter-spacing="-0.089em"><tspan x="0" y="30">Input :</tspan></text>
+      </g>
+      <g id="Block" transform="translate(26.276)">
+        <path id="Stack_Box" data-name="Stack Box" d="M16.4,0H175.811c9.059,0,16.4,14.51,16.4,32.409V377.771c0,17.9-7.344,32.409-16.4,32.409H16.4C7.344,410.18,0,395.67,0,377.771V32.409C0,14.51,7.344,0,16.4,0Z" transform="translate(141.223 0)" fill="#578184" opacity="0.85"/>
+        <text id="_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-" data-name="-  -  -  -  -  -  -  -  -  -  -  -  -  -  -" transform="translate(0 359.517)" fill="#fff" font-size="34" font-family="RobotoSlab-Light, Roboto Slab" font-weight="300" letter-spacing="-0.089em"><tspan x="0" y="36" xml:space="preserve">-  -  -  -  -  -  -  -  -  -  -  -  -  -  -</tspan></text>
+        <text id="_-_-_-_-_-_-_-_-_-_-_-_-_-_-_--2" data-name="-  -  -  -  -  -  -  -  -  -  -  -  -  -  -" transform="translate(0 20.517)" fill="#fff" font-size="34" font-family="RobotoSlab-Light, Roboto Slab" font-weight="300" letter-spacing="-0.089em"><tspan x="0" y="36" xml:space="preserve">-  -  -  -  -  -  -  -  -  -  -  -  -  -  -</tspan></text>
+        <text id="_-_-_-_-_-_-_-" data-name="-  -  -  -  -  -  -" transform="translate(165 129.787)" fill="#fff" font-size="34" font-family="RobotoSlab-Light, Roboto Slab" font-weight="300" letter-spacing="-0.089em"><tspan x="0" y="36" xml:space="preserve">-  -  -  -  -  -  -</tspan></text>
+        <text id="_-_-_-_-_-_-_--2" data-name="-  -  -  -  -  -  -" transform="translate(165 75.834)" fill="#fff" font-size="34" font-family="RobotoSlab-Light, Roboto Slab" font-weight="300" letter-spacing="-0.089em"><tspan x="0" y="36" xml:space="preserve">-  -  -  -  -  -  -</tspan></text>
+        <text id="Bindings_:" data-name="Bindings :" transform="translate(184.158 9.147)" fill="#fff" font-size="28" font-family="RobotoSlab-Light, Roboto Slab" font-weight="300" letter-spacing="-0.089em"><tspan x="0" y="29">Bindings :</tspan></text>
+        <text id="Functions:" transform="translate(184.158 110.591)" fill="#fff" font-size="26" font-family="RobotoSlab-Light, Roboto Slab" font-weight="300" letter-spacing="-0.089em"><tspan x="0" y="27">Functions:</tspan></text>
+        <text id="z_:_4_" data-name="z : 4
+" transform="translate(183.761 54.627)" fill="#fff" font-size="20" font-family="RobotoSlab-Light, Roboto Slab" font-weight="300" letter-spacing="-0.089em"><tspan x="0" y="21">z : 4</tspan></text>
+        <text id="fun_square_z_:_push_Name_z_push_Name_z_mul_return_funEnd" data-name="fun square(z) :
+    push Name z
+    push Name z
+    mul
+    return
+    funEnd" transform="translate(183.761 164.032)" fill="#fff" font-size="20" font-family="RobotoSlab-Light, Roboto Slab" font-weight="300" letter-spacing="-0.089em"><tspan x="0" y="21">fun square(z) :</tspan><tspan x="0" y="58" xml:space="preserve">    push Name z</tspan><tspan x="0" y="95" xml:space="preserve">    push Name z</tspan><tspan x="0" y="132" xml:space="preserve">    mul</tspan><tspan x="0" y="169" xml:space="preserve">    return</tspan><tspan x="0" y="206" xml:space="preserve">    funEnd</tspan></text>
+      </g>
+    </g>
+    <g id="Square_Fun_Block-2" data-name="Square Fun Block" transform="translate(763.201 2186)">
+      <g id="Input-2" data-name="Input" transform="translate(0 0.054)">
+        <path id="InputBox-2" data-name="InputBox" d="M16.352,0H175.273c9.031,0,16.352,16.948,16.352,37.854V441.23c0,20.906-7.321,37.854-16.352,37.854H16.352C7.321,479.084,0,462.136,0,441.23V37.854C0,16.948,7.321,0,16.352,0Z" transform="translate(0 0)" fill="#556b6d" opacity="0.85"/>
+        <text id="fun_abs_x_push_x_push_0_lessThan_push_x_push_x_neg_if_return_funEnd_push_-9_push_abs_call_push_9_push_abs_call" data-name="fun abs x
+push x
+push 0
+lessThan
+push x
+push x
+neg
+if
+return
+funEnd
+push -9
+push abs
+call
+push 9
+push abs
+call" transform="translate(30.036 63.798)" fill="#fff" font-size="20" font-family="RobotoSlab-Light, Roboto Slab" font-weight="300" letter-spacing="-0.089em"><tspan x="0" y="21">fun abs x</tspan><tspan x="0" y="44">push x</tspan><tspan x="0" y="67">push 0</tspan><tspan x="0" y="90">lessThan</tspan><tspan x="0" y="113">push x</tspan><tspan x="0" y="136">push x</tspan><tspan x="0" y="159">neg</tspan><tspan x="0" y="182">if</tspan><tspan x="0" y="205">return</tspan><tspan x="0" y="228">funEnd</tspan><tspan x="0" y="251">push -9</tspan><tspan x="0" y="274">push abs</tspan><tspan x="0" y="297">call</tspan><tspan x="0" y="320">push 9</tspan><tspan x="0" y="343">push abs</tspan><tspan x="0" y="366">call</tspan></text>
+        <text id="Input_:-2" data-name="Input :" transform="translate(30.478 8.041)" fill="#fff" font-size="29" font-family="RobotoSlab-Light, Roboto Slab" font-weight="300" letter-spacing="-0.089em"><tspan x="0" y="30">Input :</tspan></text>
+      </g>
+      <g id="Block-2" data-name="Block" transform="translate(26.276 0)">
+        <path id="Stack_Box-2" data-name="Stack Box" d="M16.4,0H175.811c9.059,0,16.4,16.948,16.4,37.853V441.23c0,20.906-7.344,37.853-16.4,37.853H16.4C7.344,479.083,0,462.136,0,441.23V37.853C0,16.948,7.344,0,16.4,0Z" transform="translate(141.223 0)" fill="#578184" opacity="0.85"/>
+        <text id="_-_-_-_-_-_-_-_-_-_-_-_-_-_-_--3" data-name="-  -  -  -  -  -  -  -  -  -  -  -  -  -  -" transform="translate(0 419.91)" fill="#fff" font-size="34" font-family="RobotoSlab-Light, Roboto Slab" font-weight="300" letter-spacing="-0.089em"><tspan x="0" y="36" xml:space="preserve">-  -  -  -  -  -  -  -  -  -  -  -  -  -  -</tspan></text>
+        <text id="_-_-_-_-_-_-_-_-_-_-_-_-_-_-_--4" data-name="-  -  -  -  -  -  -  -  -  -  -  -  -  -  -" transform="translate(0 29.91)" fill="#fff" font-size="34" font-family="RobotoSlab-Light, Roboto Slab" font-weight="300" letter-spacing="-0.089em"><tspan x="0" y="36" xml:space="preserve">-  -  -  -  -  -  -  -  -  -  -  -  -  -  -</tspan></text>
+        <text id="_-_-_-_-_-_-_--3" data-name="-  -  -  -  -  -  -" transform="translate(165 139.589)" fill="#fff" font-size="34" font-family="RobotoSlab-Light, Roboto Slab" font-weight="300" letter-spacing="-0.089em"><tspan x="0" y="36" xml:space="preserve">-  -  -  -  -  -  -</tspan></text>
+        <text id="_-_-_-_-_-_-_--4" data-name="-  -  -  -  -  -  -" transform="translate(165 88.573)" fill="#fff" font-size="34" font-family="RobotoSlab-Light, Roboto Slab" font-weight="300" letter-spacing="-0.089em"><tspan x="0" y="36" xml:space="preserve">-  -  -  -  -  -  -</tspan></text>
+        <text id="Bindings_:-2" data-name="Bindings :" transform="translate(184.158 10.683)" fill="#fff" font-size="28" font-family="RobotoSlab-Light, Roboto Slab" font-weight="300" letter-spacing="-0.089em"><tspan x="0" y="29">Bindings :</tspan></text>
+        <text id="Functions:-2" data-name="Functions:" transform="translate(184.158 122.169)" fill="#fff" font-size="26" font-family="RobotoSlab-Light, Roboto Slab" font-weight="300" letter-spacing="-0.089em"><tspan x="0" y="27">Functions:</tspan></text>
+        <text id="x:_9_x:_9_" data-name="x: 9
+x: 9
+" transform="translate(183.761 54.803)" fill="#fff" font-size="20" font-family="RobotoSlab-Light, Roboto Slab" font-weight="300" letter-spacing="-0.089em"><tspan x="0" y="21">x: 9</tspan><tspan x="0" y="50">x: 9</tspan></text>
+        <text id="fun_abs_x_push_x_push_0_lessThan_push_x_push_x_neg_if_return_funEnd" data-name="fun abs(x)
+push x
+push 0
+lessThan
+push x
+push x
+neg
+if
+return
+funEnd" transform="translate(183.761 172.586)" fill="#fff" font-size="20" font-family="RobotoSlab-Light, Roboto Slab" font-weight="300" letter-spacing="-0.089em"><tspan x="0" y="21">fun abs(x)</tspan><tspan x="0" y="48">push x</tspan><tspan x="0" y="75">push 0</tspan><tspan x="0" y="102">lessThan</tspan><tspan x="0" y="129">push x</tspan><tspan x="0" y="156">push x</tspan><tspan x="0" y="183">neg</tspan><tspan x="0" y="210">if</tspan><tspan x="0" y="237">return</tspan><tspan x="0" y="264">funEnd</tspan></text>
+      </g>
+    </g>
+    <g id="ForLoop_Block" data-name="ForLoop Block" transform="translate(1265.201 2186)">
+      <g id="Input-3" data-name="Input" transform="translate(0 0.054)">
+        <path id="InputBox-3" data-name="InputBox" d="M16.352,0H175.273c9.031,0,16.352,16.948,16.352,37.854V441.23c0,20.906-7.321,37.854-16.352,37.854H16.352C7.321,479.084,0,462.136,0,441.23V37.854C0,16.948,7.321,0,16.352,0Z" transform="translate(0 0)" fill="#556b6d" opacity="0.85"/>
+        <text id="inOutFun_forLoop_i_push_i_push_1_lessThan_push_retTrue_push_:error:_if_push_i_push_1_sub_swap_call_return_funEnd" data-name="inOutFun forLoop i
+push i
+push 1
+lessThan
+push retTrue
+push :error:
+if
+push i
+push 1
+sub
+swap
+call
+return
+funEnd" transform="translate(30.036 63.798)" fill="#fff" font-size="15" font-family="RobotoSlab-Light, Roboto Slab" font-weight="300" letter-spacing="-0.089em"><tspan x="0" y="21">inOutFun</tspan><tspan y="21" font-size="20"> </tspan><tspan y="21" font-size="16">forLoop</tspan><tspan y="21" xml:space="preserve" font-size="20"> i</tspan><tspan font-size="20"><tspan x="0" y="47">push i</tspan><tspan x="0" y="73">push 1</tspan><tspan x="0" y="99">lessThan</tspan><tspan x="0" y="125">push retTrue</tspan><tspan x="0" y="151">push :error:</tspan><tspan x="0" y="177">if</tspan><tspan x="0" y="203">push i</tspan><tspan x="0" y="229">push 1</tspan><tspan x="0" y="255">sub</tspan><tspan x="0" y="281">swap</tspan><tspan x="0" y="307">call</tspan><tspan x="0" y="333">return</tspan><tspan x="0" y="359">funEnd</tspan></tspan></text>
+        <text id="Input_:-3" data-name="Input :" transform="translate(30.478 8.041)" fill="#fff" font-size="29" font-family="RobotoSlab-Light, Roboto Slab" font-weight="300" letter-spacing="-0.089em"><tspan x="0" y="30">Input :</tspan></text>
+      </g>
+      <g id="Block-3" data-name="Block" transform="translate(26.276 0)">
+        <path id="Stack_Box-3" data-name="Stack Box" d="M16.4,0H175.811c9.059,0,16.4,16.948,16.4,37.853V441.23c0,20.906-7.344,37.853-16.4,37.853H16.4C7.344,479.083,0,462.136,0,441.23V37.853C0,16.948,7.344,0,16.4,0Z" transform="translate(141.223 0)" fill="#578184" opacity="0.85"/>
+        <text id="_-_-_-_-_-_-_-_-_-_-_-_-_-_-_--5" data-name="-  -  -  -  -  -  -  -  -  -  -  -  -  -  -" transform="translate(0 419.91)" fill="#fff" font-size="34" font-family="RobotoSlab-Light, Roboto Slab" font-weight="300" letter-spacing="-0.089em"><tspan x="0" y="36" xml:space="preserve">-  -  -  -  -  -  -  -  -  -  -  -  -  -  -</tspan></text>
+        <text id="_-_-_-_-_-_-_-_-_-_-_-_-_-_-_--6" data-name="-  -  -  -  -  -  -  -  -  -  -  -  -  -  -" transform="translate(0 29.91)" fill="#fff" font-size="34" font-family="RobotoSlab-Light, Roboto Slab" font-weight="300" letter-spacing="-0.089em"><tspan x="0" y="36" xml:space="preserve">-  -  -  -  -  -  -  -  -  -  -  -  -  -  -</tspan></text>
+        <text id="_-_-_-_-_-_-_--5" data-name="-  -  -  -  -  -  -" transform="translate(165 139.589)" fill="#fff" font-size="34" font-family="RobotoSlab-Light, Roboto Slab" font-weight="300" letter-spacing="-0.089em"><tspan x="0" y="36" xml:space="preserve">-  -  -  -  -  -  -</tspan></text>
+        <text id="_-_-_-_-_-_-_--6" data-name="-  -  -  -  -  -  -" transform="translate(165 88.573)" fill="#fff" font-size="34" font-family="RobotoSlab-Light, Roboto Slab" font-weight="300" letter-spacing="-0.089em"><tspan x="0" y="36" xml:space="preserve">-  -  -  -  -  -  -</tspan></text>
+        <text id="Bindings_:-3" data-name="Bindings :" transform="translate(184.158 10.683)" fill="#fff" font-size="28" font-family="RobotoSlab-Light, Roboto Slab" font-weight="300" letter-spacing="-0.089em"><tspan x="0" y="29">Bindings :</tspan></text>
+        <text id="Functions:-3" data-name="Functions:" transform="translate(184.158 122.169)" fill="#fff" font-size="26" font-family="RobotoSlab-Light, Roboto Slab" font-weight="300" letter-spacing="-0.089em"><tspan x="0" y="27">Functions:</tspan></text>
+        <text id="i:_0_i:_3" data-name="i: 0
+i: 3" transform="translate(183.761 54.803)" fill="#fff" font-size="20" font-family="RobotoSlab-Light, Roboto Slab" font-weight="300" letter-spacing="-0.089em"><tspan x="0" y="21">i: 0</tspan><tspan x="0" y="50">i: 3</tspan></text>
+        <text id="inOutFun_forLoop_i_push_i_push_1_lessThan_push_retTrue_push_:error:_if_push_i_push_1_sub_swap_call_return_funEnd-2" data-name="inOutFun forLoop (i)
+push i
+push 1
+lessThan
+push retTrue
+push :error:
+if
+push i
+push 1
+sub
+swap
+call
+return
+funEnd" transform="translate(183.761 176.586)" fill="#fff" font-size="17" font-family="RobotoSlab-Light, Roboto Slab" font-weight="300" letter-spacing="-0.089em"><tspan x="0" y="18">inOutFun forLoop (i)</tspan><tspan x="0" y="36">push i</tspan><tspan x="0" y="54">push 1</tspan><tspan x="0" y="72">lessThan</tspan><tspan x="0" y="90">push retTrue</tspan><tspan x="0" y="108">push :error:</tspan><tspan x="0" y="126">if</tspan><tspan x="0" y="144">push i</tspan><tspan x="0" y="162">push 1</tspan><tspan x="0" y="180">sub</tspan><tspan x="0" y="198">swap</tspan><tspan x="0" y="216">call</tspan><tspan x="0" y="234">return</tspan><tspan x="0" y="252">funEnd</tspan></text>
+      </g>
+    </g>
+  </g>
+</svg>

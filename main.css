@@ -564,6 +564,262 @@ svg {
     z-index: 1;
 }
 
+#Intbutton {
+    position: absolute;
+    padding: 0;
+    border: none;
+    background: none;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+    text-align: center;
+    color: rgba(0,0,0,.82);
+    font-size: 20px;
+    top: 290px;
+    left: 150px;
+    z-index: 8;
+}
+
+#Intbutton:active {
+    border: none;
+    background: none;
+    color: #fff;
+}
+
+#Intbutton:hover {
+    cursor:pointer;
+}
+
+#Intbutton:focus {
+    outline: none;
+}
+
+#IntFull {
+    position: absolute;
+    left: 6500px; /* 2500 */
+}
+
+#BannerBody {
+    position: relative;
+    top: -1778px;
+    left: 150px;
+}
+
+#MainBody {
+    position: relative;
+    top: -1779px;
+    left: 150px;
+}
+
+#BlueCloud {
+    position: relative;
+    top: -500px;
+    left: -200px;
+    width: 2564px;
+    height: 1779px;
+    background-image: url("img/Scene3Proj/Interpreter/BlueCloud.svg");
+}
+
+#IntExtTitle{
+    position: absolute;
+    top: 355px;
+    left: 400px;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+    font-size: 135px;
+    letter-spacing: -0.087em;
+    z-index: 1;
+}
+
+#IntSubTitle{
+    position: absolute;
+    top: 550px;
+    left: 400px;
+    color: #fff;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 300;
+    font-size: 52px;
+    text-align: left;
+    letter-spacing: -0.087em;
+    z-index: 1;
+}
+
+#IntExtDate{
+    position: absolute;
+    top: 200px;
+    left: 200px;
+    width: 216px;
+    height: 193px;
+    background-size: 95% 95%;
+    background-repeat: no-repeat;
+    background-image: url("img/Scene3Proj/Interpreter/IntDate.svg");
+    z-index: 4;
+}
+
+#IntExtLogo {
+    position: absolute;
+    top: 150px;
+    left: 1200px;
+    width: 636px;
+    height: 619px;
+    background-image: url("img/Scene3Proj/Interpreter/IntExtLogo.svg");
+    z-index: 1;
+}
+
+.IntBody {
+    color: #fff;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 300;
+    font-size: 40px;
+    text-align: left;
+    letter-spacing: -0.087em;
+    z-index: 1;
+}
+
+#Body1 {
+    position: absolute;
+    top: 1680px;
+    left: 380px;
+}
+
+#Body2 {
+    position: absolute;
+    text-align: center;
+    top: 2025px;
+    left: 525px;
+}
+
+#Body3 {
+    position: absolute;
+    text-align: center;
+    top: 2725px;
+    left: 525px;
+}
+
+#CodeBlock1 {
+    position: absolute;
+    top: 1615px;
+    left: 1100px;
+    width: 582px;
+    height: 325px;
+    background-image: url("img/Scene3Proj/Interpreter/BlockGroup1.svg");
+    z-index: 1;
+}
+
+#CodeBlock2 {
+    position: absolute;
+    top: 2275px;
+    left: 240px;
+    width: 1432px;
+    height: 410px;
+    background-image: url("img/Scene3Proj/Interpreter/BlockGroup2.svg");
+    z-index: 1;
+}
+
+#CodeBlock3 {
+    position: absolute;
+    top: 2950px;
+    left: 240px;
+    width: 1428px;
+    height: 479px;
+    background-image: url("img/Scene3Proj/Interpreter/BlockGroup3.svg");
+    z-index: 1;
+}
+
+#CodeBackground {
+    position: absolute;
+    top: 1500px; /* 1500 */
+    width: 1920px;
+    height: 2039px;
+    background-image: url("img/Scene3Proj/Interpreter/CodeBackground.svg");
+}
+
+#learnSection2 {
+    position: absolute;
+    top: 3592px;
+    left: 0px;
+    color: #555555;
+    font-family: 'Roboto Slab', serif; 
+    text-align: center;
+}
+
+#BulbCol {
+    position: relative;
+    top: -20px;
+}
+
+.LearnTitle.Lambda {
+    position: relative;
+    top: 32px;
+}
+
+.LearnDesc.Lambda {
+    position: relative;
+    top: 32px;
+}
+
+.LearnTitle.Clock {
+    position: relative;
+    top: 14px;
+}
+
+.LearnDesc.Clock {
+    position: relative;
+    top: 14px;
+}
+
+.LearnTitle.Bulb {
+    position: relative;
+    top: -23px;
+}
+
+.LearnDesc.Bulb {
+    position: relative;
+    top: -23px;
+}
+
+#Cols {
+    position: relative;
+    left: -45px;
+}
+
+#GridBanner2 {
+    position: absolute;
+    top: 4742px;
+    left: -50px;
+    width: 2083px;
+    height: 866px;
+    background-repeat: no-repeat;
+    background-image: url("img/Scene3Proj/Interpreter/DownloadBanner.svg");
+    z-index: 0;
+}
+
+#DownloadTitle2 {
+    position: absolute;
+    top: 100px;
+    left: 496px;
+    color: #555555;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+    font-size: 96px;
+    letter-spacing: -0.087em;
+    z-index: 2;
+}
+
+#LabGitHub2 {
+    position: absolute;
+    top: 300px;
+    left: 646px;
+    width: 800px;
+    height: 260px;
+    background-repeat: no-repeat;
+    background-image: url("img/Scene3Proj/Interpreter/DownloadButton.svg");
+}
+
+#LabGitHub2:active {
+    top: 320px;
+    background-image: url("img/Scene3Proj/Interpreter/DownLoadButtonPressed.svg");
+}
+
 #CompTab {
     position: absolute;
     top: 1500px;
@@ -601,6 +857,292 @@ svg {
     background-repeat: no-repeat;
     background-image: url("img/Scene3/CompilerLogo.svg");
     z-index: 1;
+}
+
+#CompFull {
+    position: absolute;
+    left: 8850px; /* 5000  for x coor as well*/
+}
+
+#GreenCloud {
+    position: relative;
+    top: -490px;
+    left: -550px;
+    width: 3084px;
+    height: 1695px;
+    background-image: url("img/Scene3Proj/Compiler/GreenCloud.svg");
+}
+
+#CompExtDate{
+    position: absolute;
+    top: 190px;
+    left: 200px;
+    width: 216px;
+    height: 193px;
+    background-size: 95% 95%;
+    background-repeat: no-repeat;
+    background-image: url("img/Scene3Proj/Compiler/CompDate.svg");
+    z-index: 4;
+}
+
+#CompExtTitle{
+    position: absolute;
+    top: 348px;
+    left: 400px;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+    font-size: 135px;
+    letter-spacing: -0.087em;
+    z-index: 1;
+}
+
+#CompSubTitle{
+    position: absolute;
+    top: 550px;
+    left: 400px;
+    color: #fff;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 300;
+    font-size: 52px;
+    text-align: left;
+    letter-spacing: -0.087em;
+    z-index: 1;
+}
+
+#CompExtLogo {
+    position: absolute;
+    top: 150px;
+    left: 1100px;
+    width: 613px;
+    height: 735px;
+    background-image: url("img/Scene3Proj/Compiler/CompExtLogo.svg");
+    z-index: 1;
+}
+
+#CompText1 {
+    position: absolute;
+    top: 1350px;
+    left: 200px;
+    color: #96CDB9;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 300;
+    font-size: 48px;
+    text-align: left;
+    letter-spacing: -0.119em;
+    z-index: 1;
+}
+
+#CompText2 {
+    position: absolute;
+    top: 1800px;
+    left: 300px;
+    color: #AFAFAF;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 300;
+    font-size: 48px;
+    text-align: right;
+    letter-spacing: -0.119em;
+    z-index: 1;
+}
+
+#CompText3 {
+    position: absolute;
+    top: 2125px;
+    left: 675px;
+}
+
+#CompText31{
+    position: relative;
+    left: -200px;
+}
+
+#CompText32{
+    position: relative;
+    left: -100px;
+}
+
+#CompText33{
+    position: relative;
+    left: 0px;
+}
+
+#CompText34{
+    position: relative;
+    left: 100px;
+}
+
+.CText {
+    margin: 40px;
+    padding: 0px;
+    color: #85AB97;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 300;
+    font-size: 42px;
+    text-align: left;
+    letter-spacing: -0.119em;
+    z-index: 1;
+}
+
+#CompText4 {
+    position: absolute;
+    top: 2675px;
+    left: 800px;
+    color: #B1B1B1;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 300;
+    font-size: 48px;
+    text-align: left;
+    letter-spacing: -0.119em;
+    z-index: 1;
+}
+
+#CompText5 {
+    position: absolute;
+    top: 3050px;
+    left: 900px;
+    color: #88CCA1;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 300;
+    font-size: 48px;
+    text-align: right;
+    letter-spacing: -0.119em;
+    z-index: 1;
+}
+
+#CompBlock1 {
+    position: absolute;
+    top: 1300px;
+    left: 1070px;
+    width: 1170px;
+    height: 1025px;
+    background-repeat: no-repeat;
+    background-size: 80% 80%;
+    background-image: url("img/Scene3Proj/Compiler/CodePanel1.svg");
+    z-index: -2;
+}
+
+#CompBlock2 {
+    position: absolute;
+    top: 2600px;
+    left: -100px;
+    width: 703px;
+    height: 968px;
+    background-repeat: no-repeat;
+    background-size: 80% 80%;
+    background-image: url("img/Scene3Proj/Compiler/CodePanel2.svg");
+    z-index: -2;
+}
+
+#SwitchCol {
+    position: relative;
+    top: 30px;
+}
+
+.LearnTitle.Switch {
+    position: relative;
+    top: 45px;
+}
+
+.LearnDesc.Switch {
+    position: relative;
+    top: 45px;
+}
+
+#PencilCol {
+    position: relative;
+    top: 10px;
+}
+
+.LearnTitle.Pencil {
+    position: relative;
+    top: 28px;
+}
+
+.LearnDesc.Pencil {
+    position: relative;
+    top: 28px;
+}
+
+#CapCol {
+    position: relative;
+    top: -55px;
+}
+
+.LearnTitle.Cap {
+    position: relative;
+    top: -55px;
+}
+
+.LearnDesc.Cap {
+    position: relative;
+    top: -55px;
+}
+
+#DownloadTitle3 {
+    position: absolute;
+    top: 185px;
+    left: 496px;
+    color: #555555;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+    font-size: 96px;
+    letter-spacing: -0.087em;
+    z-index: 2;
+}
+
+#LabGitHub3 {
+    position: absolute;
+    top: 385px;
+    left: 646px;
+    width: 800px;
+    height: 260px;
+    background-repeat: no-repeat;
+    background-image: url("img/Scene3Proj/Compiler/DownloadButton.svg");
+}
+
+#LabGitHub3:active {
+    top: 320px;
+    background-image: url("img/Scene3Proj/Compiler/DownLoadButtonPressed.svg");
+}
+
+#GridBanner3 {
+    position: absolute;
+    top: 1065px;
+    left: -50px;
+    width: 2240px;
+    height: 1050px;
+    background-repeat: no-repeat;
+    background-image: url("img/Scene3Proj/Compiler/CompBanner.svg");
+    z-index: 0;
+}
+
+#Compbutton {
+    position: absolute;
+    padding: 0;
+    border: none;
+    background: none;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+    text-align: center;
+    color: rgba(0,0,0,.82);
+    font-size: 20px;
+    top: 280px;
+    left: 115px;
+    z-index: 8;
+}
+
+#Compbutton:active {
+    border: none;
+    background: none;
+    color: #fff;
+}
+
+#Compbutton:hover {
+    cursor:pointer;
+}
+
+#Compbutton:focus {
+    outline: none;
 }
 
 #AlgoTab {

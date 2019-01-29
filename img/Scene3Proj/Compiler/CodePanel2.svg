@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="703" height="968" viewBox="0 0 703 968">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.663" y1="0.6" x2="0.666" y2="0.602" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#7ddeba"/>
+      <stop offset="1" stop-color="#9decce"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0.127" y1="0.574" x2="0.607" y2="0.608" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_15" data-name="Group 15" transform="translate(187 -2003)">
+    <g id="Rectangle_68" data-name="Rectangle 68" transform="translate(-187 2003)" stroke="rgba(112,112,112,0.26)" stroke-width="26" fill="url(#linear-gradient)">
+      <rect width="703" height="968" rx="98" stroke="none"/>
+      <rect x="13" y="13" width="677" height="942" rx="85" fill="none"/>
+    </g>
+    <text id="J_Main_square_ADD_S5_0_1_BR_ADDI_A0_0_49_Main_ADD_A0_0_STR_A0_SP_4_BL_square_ADD_A0_0_S5_ADDI_A1_0_2_ADD_A3_0_0_SUBS_A2_A2_A0_BLEQ_E1_ADDI_A3_0_1_J_E2" data-name="J Main
+
+square ADD S5 0 #1
+BR
+ADDI A0 0 #49
+
+Main ADD A0 0 
+STR A0 SP #4
+BL square
+ADD A0 0 S5
+ADDI A1 0 #2
+ADD A3 0 0
+SUBS A2 A2 A0
+BLEQ E1
+ADDI A3 0 #1
+J E2" transform="translate(68 2053)" fill="#fff" font-size="46" font-family="RobotoSlab-Light, Roboto Slab" font-weight="300" letter-spacing="-0.036em"><tspan x="0" y="48">J Main</tspan><tspan x="0" y="99"></tspan><tspan x="0" y="150">square ADD S5 0 #1</tspan><tspan x="0" y="201">BR</tspan><tspan x="0" y="252">ADDI A0 0 #49</tspan><tspan x="0" y="303"></tspan><tspan x="0" y="354">Main ADD A0 0 </tspan><tspan x="0" y="405">STR A0 SP #4</tspan><tspan x="0" y="456">BL square</tspan><tspan x="0" y="507">ADD A0 0 S5</tspan><tspan x="0" y="558">ADDI A1 0 #2</tspan><tspan x="0" y="609">ADD A3 0 0</tspan><tspan x="0" y="660">SUBS A2 A2 A0</tspan><tspan x="0" y="711">BLEQ E1</tspan><tspan x="0" y="762">ADDI A3 0 #1</tspan><tspan x="0" y="813">J E2</tspan></text>
+    <rect id="Rectangle_67" data-name="Rectangle 67" width="703" height="968" transform="translate(-187 2003)" opacity="0.32" fill="url(#linear-gradient-2)"/>
+  </g>
+</svg>

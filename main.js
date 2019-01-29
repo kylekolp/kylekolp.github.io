@@ -3,9 +3,22 @@ $(window).on('beforeunload', function(){
   $(window).scrollLeft(0);
   // Labyrinth: 7900
   // Interpreter: 8700
-  // Compiler: 9500
+  // Compiler: 9300
   // Algo Visual: 10050
 });
+
+var backButtonControl = 7900
+
+function ChangeBackControl(int){
+  console.log("Changing Back Control " + int);
+  switch(int){
+    case 0: backButtonControl = 7900; break; //Labyrinth
+    case 1: backButtonControl = 8700; break; //Interpreter
+    case 2: backButtonControl = 9300; break; //Compiler
+    default:  backButtonControl = 7900;
+  }
+  console.log("int: " + int + " control: " + backButtonControl);
+}
 
 var controller = new ScrollMagic.Controller();
 var controller2 = new ScrollMagic.Controller({vertical: false});
@@ -595,7 +608,6 @@ $(document).ready(function(){
       // })
       .addTo(controller);
 
-
     var InfoTab = document.getElementById("InfoTab");
     var tween21 = TweenMax.to(InfoTab, 1, {x: -980, ease:Power1.easeInOut});
 
@@ -749,10 +761,26 @@ $(document).ready(function(){
     }).setPin("#LabBackButton", {pushFollowers: false})
       .setTween(tween41)
       // .addIndicators({
-      //   name: 'Back Fade',
+      //   name: 'Back Lab Update',
       //   colorTrigger: 'black',
       //   indent: 80
       // })
+      .on('start', function () {
+        ChangeBackControl(0);
+      })
+      .addTo(controller2);
+
+    var IntBackUpdateHook = new ScrollMagic.Scene({
+      offset: 6130,
+      triggerHook: 0.2
+    })/*.addIndicators({
+        name: 'Back Int Update',
+        colorTrigger: 'black',
+        indent: 80
+      }) */
+      .on('start', function () {
+        ChangeBackControl(1);
+      })
       .addTo(controller2);
 
     var LabGridHook = new ScrollMagic.Scene({
@@ -797,7 +825,6 @@ $(document).ready(function(){
       //   indent: 60
       // })
       .addTo(controller2);
-
 
     var LabGridHook3 = new ScrollMagic.Scene({
       offset: 4671,
@@ -1186,17 +1213,291 @@ $(document).ready(function(){
       // })
       .addTo(controller);
 
+    var IntExtTitle = document.getElementById('IntExtTitle');
+    var tween42 = TweenMax.from(IntExtTitle, 0.75, {opacity: 0, x: -200, ease:Power1.easeOut});
+    
+    var IntExtTitleHook = new ScrollMagic.Scene({
+      offset: 6585,
+      triggerHook: 0.2
+    }).setTween(tween42)
+      // .addIndicators({
+      //   name: 'IntTitle Pin',
+      //   colorTrigger: 'black'
+      // })
+      .addTo(controller2);
+
+    var IntSubTitle = document.getElementById('IntSubTitle');
+    var tween43 = TweenMax.from(IntSubTitle, 0.75, {opacity: 0, x: -200, ease:Power1.easeOut});
+    
+    var IntSubTitleHook = new ScrollMagic.Scene({
+      offset: 6660,
+      triggerHook: 0.2
+    }).setTween(tween43)
+      // .addIndicators({
+      //   name: 'IntSubTitle Pin',
+      //   colorTrigger: 'black',
+      //   indent: 20
+      // })
+      .addTo(controller2);
+
+    var IntExtDate = document.getElementById('IntExtDate');
+    var tween44 = TweenMax.from(IntExtDate, 1, {opacity: 0, x: -200, ease:Power1.easeOut});
+    
+    var IntExtDateHook = new ScrollMagic.Scene({
+      offset: 6625,
+      triggerHook: 0.2
+    }).setTween(tween44)
+      // .addIndicators({
+      //   name: 'IntDate Fade',
+      //   colorTrigger: 'black',
+      //   indent: 40
+      // })
+      .addTo(controller2);
+
+    var IntLogo = document.getElementById('IntExtLogo');
+    var tween46 = TweenMax.from(IntLogo, 0.75, {x: -200, ease:Power1.easeOut});
+    
+    var IntLogoExtHook = new ScrollMagic.Scene({
+      offset: 6625,
+      triggerHook: 0.2
+    }).setTween(tween46)
+      // .addIndicators({
+      //   name: 'IntGrid FadeIn',
+      //   colorTrigger: 'black',
+      //   indent: 60
+      // })
+      .addTo(controller2);
+
+    var MainBody = document.getElementById('MainBody');
+    var tween47 = TweenMax.from(MainBody, 0.75, {opacity: 0, ease:Power2.easeInOut});
+
+    var IntMainBodyHook = new ScrollMagic.Scene({
+      offset: 1200,
+      triggerHook: 0.2,
+    }).setTween(tween47)
+      // .addIndicators({
+      //   name: 'IntBody Fade',
+      //   colorTrigger: 'black',
+      //   indent: 250
+      // })
+      .addTo(controller);
+
+    var LambdaCol = document.getElementById('LambdaCol');
+    var tween48 = TweenMax.from(LambdaCol, 1, {opacity: 0, y: 200, ease:Power3.easeInOut});
+
+    var LambdaColHook = new ScrollMagic.Scene({
+      offset: 3450,
+      triggerHook: 0.2,
+    }).setTween(tween48)
+      // .addIndicators({
+      //   name: 'LambdaLogo Fade',
+      //   colorTrigger: 'black',
+      //   indent: 270
+      // })
+      .addTo(controller);
+
+    var ClockCol = document.getElementById('ClockCol');
+    var tween49 = TweenMax.from(ClockCol, 1, {opacity: 0, y: 200, ease:Power3.easeInOut});
+
+    var ClockColHook = new ScrollMagic.Scene({
+      offset: 3525,
+      triggerHook: 0.2,
+    }).setTween(tween49)
+      // .addIndicators({
+      //   name: 'ClockLogo Fade',
+      //   colorTrigger: 'black',
+      //   indent: 270
+      // })
+      .addTo(controller);
+
+    var BulbCol = document.getElementById('BulbCol');
+    var tween50 = TweenMax.from(BulbCol, 1, {opacity: 0, y: 200, ease:Power3.easeInOut});
+
+    var BulbColHook = new ScrollMagic.Scene({
+      offset: 3600,
+      triggerHook: 0.2,
+    }).setTween(tween50)
+      // .addIndicators({
+      //   name: 'BulbLogo Fade',
+      //   colorTrigger: 'black',
+      //   indent: 270
+      // })
+      .addTo(controller);
+
+    var DownloadTitleInt = document.getElementById('DownloadTitle2');
+    var tween51 = TweenMax.from(DownloadTitleInt, 0.75, {opacity: 0, y: 150, ease:Power3.easeInOut});
+
+    var DownloadTitle2Hook = new ScrollMagic.Scene({
+      offset: 4625,
+      triggerHook: 0.2,
+    }).setTween(tween51)
+      // .addIndicators({
+      //   name: 'DownloadTitle Fade',
+      //   colorTrigger: 'black',
+      //   indent: 100
+      // })
+      .addTo(controller);
+
+    var SwitchCol = document.getElementById('SwitchCol');
+    var tween52 = TweenMax.from(SwitchCol, 1, {opacity: 0, y: 200, ease:Power3.easeInOut});
+
+    var SwitchColHook = new ScrollMagic.Scene({
+      offset: 3450,
+      triggerHook: 0.2,
+    }).setTween(tween52)
+      // .addIndicators({
+      //   name: 'SwitchLogo Fade',
+      //   colorTrigger: 'black',
+      //   indent: 270
+      // })
+      .addTo(controller);
+
+    var PencilCol = document.getElementById('PencilCol');
+    var tween53 = TweenMax.from(PencilCol, 1, {opacity: 0, y: 200, ease:Power3.easeInOut});
+
+    var PencilColHook = new ScrollMagic.Scene({
+      offset: 3525,
+      triggerHook: 0.2,
+    }).setTween(tween53)
+      // .addIndicators({
+      //   name: 'PencilLogo Fade',
+      //   colorTrigger: 'black',
+      //   indent: 270
+      // })
+      .addTo(controller);
+
+    var CapCol = document.getElementById('CapCol');
+    var tween54 = TweenMax.from(CapCol, 1, {opacity: 0, y: 200, ease:Power3.easeInOut});
+
+    var CapColHook = new ScrollMagic.Scene({
+      offset: 3600,
+      triggerHook: 0.2,
+    }).setTween(tween54)
+      // .addIndicators({
+      //   name: 'CapLogo Fade',
+      //   colorTrigger: 'black',
+      //   indent: 270
+      // })
+      .addTo(controller);
+
+    var DownloadTitle3Int = document.getElementById('DownloadTitle3');
+    var tween55 = TweenMax.from(DownloadTitle3Int, 0.75, {opacity: 0, y: 150, ease:Power3.easeInOut});
+
+    var DownloadTitle3Hook = new ScrollMagic.Scene({
+      offset: 4625,
+      triggerHook: 0.2,
+    }).setTween(tween55)
+      // .addIndicators({
+      //   name: 'DownloadTitle3 Fade',
+      //   colorTrigger: 'black',
+      //   indent: 100
+      // })
+      .addTo(controller);
+
+    var CompPanel1 = document.getElementById('CompBlock1');
+    var tween56 = TweenMax.from(CompPanel1, 1.25, {x: 850, ease:Power2.easeOut});
+
+    var CompPanel1Hook = new ScrollMagic.Scene({
+      offset: 900,
+      triggerHook: 0.2,
+    }).setTween(tween56)
+      // .addIndicators({
+      //   name: 'CompPanel1 Fade',
+      //   colorTrigger: 'black',
+      //   indent: 100
+      // })
+      .addTo(controller);
+
+    var CompPanel2 = document.getElementById('CompBlock2');
+    var tween57 = TweenMax.from(CompPanel2, 1.25, {x: -475, ease:Power2.easeOut});
+
+    var CompPanel2Hook = new ScrollMagic.Scene({
+      offset: 2000,
+      triggerHook: 0.2,
+    }).setTween(tween57)
+      // .addIndicators({
+      //   name: 'CompPanel2 Fade',
+      //   colorTrigger: 'black',
+      //   indent: 100
+      // })
+      .addTo(controller);
+
+    var CompExtTitle = document.getElementById('CompExtTitle');
+    var tween58 = TweenMax.from(CompExtTitle, 0.75, {opacity: 0, x: -200, ease:Power1.easeOut});
+    
+    var CompExtTitleHook = new ScrollMagic.Scene({
+      offset: 8750,
+      triggerHook: 0.2
+    }).setTween(tween58)
+      // .addIndicators({
+      //   name: 'CompTitle Pin',
+      //   colorTrigger: 'black'
+      // })
+      .addTo(controller2);
+
+    var CompSubTitle = document.getElementById('CompSubTitle');
+    var tween59 = TweenMax.from(CompSubTitle, 0.75, {opacity: 0, x: -200, ease:Power1.easeOut});
+    
+    var CompSubTitleHook = new ScrollMagic.Scene({
+      offset: 8725,
+      triggerHook: 0.2
+    }).setTween(tween59)
+      // .addIndicators({
+      //   name: 'CompSubTitle Pin',
+      //   colorTrigger: 'black',
+      //   indent: 20
+      // })
+      .addTo(controller2);
+
+    var CompExtDate = document.getElementById('CompExtDate');
+    var tween60 = TweenMax.from(CompExtDate, 1, {opacity: 0, x: -200, ease:Power1.easeOut});
+    
+    var CompExtDateHook = new ScrollMagic.Scene({
+      offset: 8690,
+      triggerHook: 0.2
+    }).setTween(tween60)
+      // .addIndicators({
+      //   name: 'IntDate Fade',
+      //   colorTrigger: 'black',
+      //   indent: 40
+      // })
+      .addTo(controller2);
+
+    var CompLogo = document.getElementById('CompExtLogo');
+    var tween61 = TweenMax.from(CompLogo, 0.75, {x: -200, ease:Power1.easeOut});
+    
+    var CompLogoExtHook = new ScrollMagic.Scene({
+      offset: 8690,
+      triggerHook: 0.2
+    }).setTween(tween61)
+      // .addIndicators({
+      //   name: 'IntGrid FadeIn',
+      //   colorTrigger: 'black',
+      //   indent: 60
+      // })
+      .addTo(controller2);
+
 });
 
 var isInnerPage = false; //If the user is in an inner page (one of the expanded project pages) then the user will be halted when scrolling passed the end below.
 
+var scrollPoint = 8700;
+
+function BackToEnd(int){
+  switch(int){
+    case 7900: return 8700;
+    case 8700: return 4700;
+    case 9500: return 4700;
+  }
+}
+
 //Stops scrolling after scrollPoint variable.
 $(function() {
-  var scrollPoint = 8700;
   var scrolledPast = false;
   $(window).scroll(function() {
-      $(window).scrollTop() < scrollPoint  && isInnerPage ? scrolledPast = true : '';
-      $(window).scrollTop() > scrollPoint && scrolledPast &isInnerPage == true ? $(window).scrollTop(scrollPoint) : '';
+    scrollPoint = BackToEnd(backButtonControl);
+      $(window).scrollTop() < scrollPoint && $(window).scrollLeft() > 4000 ? scrolledPast = true : '';
+      $(window).scrollTop() > scrollPoint && $(window).scrollLeft() > 4000 && scrolledPast == true ? $(window).scrollTop(scrollPoint) : '';
   }).scroll();
 });
 
@@ -1204,24 +1505,30 @@ var WSCONST = 1950;
 
 function AnchorToX(id){
   if(id == "#LabFull"){ return 4580; }
-  else if(id == "#LabTab"){ return 0;}
+  else if(id =="#IntFull"){ return 6665; }
+  else if(id == "#CompFull"){ return 8850;}
+  else if(id == "#Back"){ return 0;}
   else{ alert('None Sorry X'); }
 }
 
 function AnchorToY(id){
   if(id == "#LabFull"){ return 0; }
-  else if(id == "#LabTab"){ return 7900; }
+  if(id == "#IntFull"){ return 0; }
+  if(id == "#CompFull"){ return 0; }
+  else if(id == "#Back"){ return backButtonControl; }
   else{ alert('None Sorry Y'); }
 }
 
 var tl = new TimelineLite();
 
 controller.scrollTo(function(xval,yval) {
+  
   if(window.scrollY <= 7075 && !isInnerPage){ return; }
 
+
   tl.to(window, 2, { scrollTo : {x : WSCONST }, ease : Power2.easeIn})
-    .to(window, 0.001, { scrollTo : {y : yval }, ease : Power4.easeInOut})
-    .to(window, 2, { scrollTo : {x : xval }, ease : Power2.easeOut});
+    .to(window, 0.002, { scrollTo : {y : yval }, ease : Power4.easeInOut})
+    .to(window, 2, { scrollTo : {x : xval }, ease : Power2.easeOut})
 
 });
 
@@ -1233,7 +1540,6 @@ $(document).on("click", 'a[href^=\\#]', function(e) {
   if($(id).length > 0) {
     // prevents default behavior of links.
     e.preventDefault();
-    
     // trigger scroll
     controller.scrollTo(xval,yval);
     // controller.scrollTo(xval,yval);
