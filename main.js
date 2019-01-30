@@ -9,15 +9,50 @@ $(window).on('beforeunload', function(){
 
 var backButtonControl = 7900
 
+function updateGrid(controlInt){
+  var element = document.getElementById("AlgoGridChangable");
+  switch(controlInt){
+    case 0: element.classList.add("BFS");
+            element.classList.remove("DFS");
+            element.classList.remove("DJ");
+            element.classList.remove("AStar");
+            element.classList.remove("Base");
+            break;
+    case 1: element.classList.add("DFS");
+            element.classList.remove("BFS");
+            element.classList.remove("DJ");
+            element.classList.remove("AStar");
+            element.classList.remove("Base");
+            break;
+    case 2: element.classList.add("DJ");
+            element.classList.remove("DFS");
+            element.classList.remove("BFS");
+            element.classList.remove("AStar");
+            element.classList.remove("Base");
+            break;
+    case 3: element.classList.add("AStar");
+            element.classList.remove("BFS");
+            element.classList.remove("DJ");
+            element.classList.remove("DFS");
+            element.classList.remove("Base");
+            break;
+    default:element.classList.add("Base");
+            element.classList.remove("DFS");
+            element.classList.remove("BFS");
+            element.classList.remove("DJ");
+            element.classList.remove("AStar");
+            break;
+  }
+}
+
 function ChangeBackControl(int){
-  console.log("Changing Back Control " + int);
   switch(int){
     case 0: backButtonControl = 7900; break; //Labyrinth
     case 1: backButtonControl = 8700; break; //Interpreter
     case 2: backButtonControl = 9300; break; //Compiler
+    case 3: backButtonControl = 10050; break; //Algo Visual
     default:  backButtonControl = 7900;
   }
-  console.log("int: " + int + " control: " + backButtonControl);
 }
 
 var controller = new ScrollMagic.Controller();
@@ -783,6 +818,33 @@ $(document).ready(function(){
       })
       .addTo(controller2);
 
+    var CompBackUpdateHook = new ScrollMagic.Scene({
+      offset: 8200,
+      triggerHook: 0.2
+    })/*.addIndicators({
+        name: 'Back Comp Update',
+        colorTrigger: 'black',
+        indent: 80
+      })*/
+      .on('start', function () {
+        ChangeBackControl(2);
+      })
+      .addTo(controller2);
+
+    var AlgoBackUpdateHook = new ScrollMagic.Scene({
+      offset: 10500,
+      triggerHook: 0.2
+    })/*.addIndicators({
+        name: 'Algo Comp Update',
+        colorTrigger: 'black',
+        indent: 80
+      }) */
+      .on('start', function () {
+        ChangeBackControl(3);
+      })
+      .setClassToggle("#CompBlock1", "Invisible")
+      .addTo(controller2);
+
     var LabGridHook = new ScrollMagic.Scene({
       offset: 0,
       triggerHook: 0.2,
@@ -1477,17 +1539,130 @@ $(document).ready(function(){
       // })
       .addTo(controller2);
 
+    var AlgoExtTitle = document.getElementById('AlgoExtTitle');
+    var tween62 = TweenMax.from(AlgoExtTitle, 0.75, {opacity: 0, x: -200, ease:Power1.easeOut});
+    
+    var AlgoExtTitleHook = new ScrollMagic.Scene({
+      offset: 11350,
+      triggerHook: 0.2
+    }).setTween(tween62)
+      // .addIndicators({
+      //   name: 'AlgoTitle Pin',
+      //   colorTrigger: 'black'
+      // })
+      .addTo(controller2);
+
+    var AlgoSubTitle = document.getElementById('AlgoSubTitle');
+    var tween63 = TweenMax.from(AlgoSubTitle, 0.75, {opacity: 0, x: -200, ease:Power1.easeOut});
+    
+    var AlgoSubTitleHook = new ScrollMagic.Scene({
+      offset: 11325,
+      triggerHook: 0.2
+    }).setTween(tween63)
+      // .addIndicators({
+      //   name: 'AlgoSubTitle Pin',
+      //   colorTrigger: 'black',
+      //   indent: 20
+      // })
+      .addTo(controller2);
+
+    var AlgoExtDate = document.getElementById('AlgoExtDate');
+    var tween64 = TweenMax.from(AlgoExtDate, 1, {opacity: 0, x: -200, ease:Power1.easeOut});
+    
+    var AlgoExtDateHook = new ScrollMagic.Scene({
+      offset: 11290,
+      triggerHook: 0.2
+    }).setTween(tween64)
+      // .addIndicators({
+      //   name: 'AlgoDate Fade',
+      //   colorTrigger: 'black',
+      //   indent: 40
+      // })
+      .addTo(controller2);
+
+    var AlgoLogo = document.getElementById('AlgoExtLogo');
+    var tween65 = TweenMax.from(AlgoLogo, 0.75, {x: -200, ease:Power1.easeOut});
+    
+    var AlgoLogoExtHook = new ScrollMagic.Scene({
+      offset: 11290,
+      triggerHook: 0.2
+    }).setTween(tween65)
+      // .addIndicators({
+      //   name: 'AlgoGrid FadeIn',
+      //   colorTrigger: 'black',
+      //   indent: 60
+      // })
+      .addTo(controller2);
+
+    var DownloadTitle4Comp = document.getElementById('DownloadTitle4');
+    var tween66 = TweenMax.from(DownloadTitle4Comp, 0.75, {opacity: 0, y: 150, ease:Power3.easeInOut});
+
+    var DownloadTitle4Hook = new ScrollMagic.Scene({
+      offset: 4625,
+      triggerHook: 0.2,
+    }).setTween(tween66)
+      // .addIndicators({
+      //   name: 'DownloadTitle3 Fade',
+      //   colorTrigger: 'black',
+      //   indent: 100
+      // })
+      .addTo(controller);
+
+    var GlassCol = document.getElementById('GlassCol');
+    var tween67 = TweenMax.from(GlassCol, 1, {opacity: 0, y: 200, ease:Power3.easeInOut});
+
+    var GlassColHook = new ScrollMagic.Scene({
+      offset: 3450,
+      triggerHook: 0.2,
+    }).setTween(tween67)
+      // .addIndicators({
+      //   name: 'LambdaLogo Fade',
+      //   colorTrigger: 'black',
+      //   indent: 270
+      // })
+      .addTo(controller);
+
+    var AgileCol = document.getElementById('AgileCol');
+    var tween68 = TweenMax.from(AgileCol, 1, {opacity: 0, y: 200, ease:Power3.easeInOut});
+
+    var AgileColHook = new ScrollMagic.Scene({
+      offset: 3525,
+      triggerHook: 0.2,
+    }).setTween(tween68)
+      // .addIndicators({
+      //   name: 'ClockLogo Fade',
+      //   colorTrigger: 'black',
+      //   indent: 270
+      // })
+      .addTo(controller);
+
+    var WebCol = document.getElementById('WebCol');
+    var tween69 = TweenMax.from(WebCol, 1, {opacity: 0, y: 200, ease:Power3.easeInOut});
+
+    var WebColHook = new ScrollMagic.Scene({
+      offset: 3600,
+      triggerHook: 0.2,
+    }).setTween(tween69)
+      // .addIndicators({
+      //   name: 'BulbLogo Fade',
+      //   colorTrigger: 'black',
+      //   indent: 270
+      // })
+      .addTo(controller);
+
 });
 
 var isInnerPage = false; //If the user is in an inner page (one of the expanded project pages) then the user will be halted when scrolling passed the end below.
 
 var scrollPoint = 8700;
+var lockScrolling = false;
 
 function BackToEnd(int){
   switch(int){
     case 7900: return 8700;
     case 8700: return 4700;
-    case 9500: return 4700;
+    case 9300: return 4700;
+    case 10050: return 4700;
   }
 }
 
@@ -1507,6 +1682,7 @@ function AnchorToX(id){
   if(id == "#LabFull"){ return 4580; }
   else if(id =="#IntFull"){ return 6665; }
   else if(id == "#CompFull"){ return 8850;}
+  else if(id == "#AlgoFull"){ return 11450;}
   else if(id == "#Back"){ return 0;}
   else{ alert('None Sorry X'); }
 }
@@ -1515,20 +1691,64 @@ function AnchorToY(id){
   if(id == "#LabFull"){ return 0; }
   if(id == "#IntFull"){ return 0; }
   if(id == "#CompFull"){ return 0; }
+  if(id == "#AlgoFull"){ return 0; }
   else if(id == "#Back"){ return backButtonControl; }
   else{ alert('None Sorry Y'); }
 }
 
+function backToTime(backbuttoncontrol){
+  if(backbuttoncontrol == 7900){ return 2; }
+  if(backbuttoncontrol == 8700){ return 2.5; }
+  if(backbuttoncontrol == 9300){ return 3.5; }
+  if(backbuttoncontrol == 10050){ return 4; }
+  else{ alert('None Sorry Back'); }
+}
+
+function AnchorToTime(id){
+  if(id == "#LabFull"){ return 2; }
+  if(id == "#IntFull"){ return 2.5; }
+  if(id == "#CompFull"){ return 3.5; }
+  if(id == "#AlgoFull"){ return 4; }
+  else if(id == "#Back"){ return backToTime(backButtonControl); }
+  else{ alert('None Sorry Time'); }
+}
+
+var timevar = 2;
 var tl = new TimelineLite();
+
+function stopWheel(e){
+  if(!e){ e = window.event; } /* IE7, IE8, Chrome, Safari */
+  if(e.preventDefault) { e.preventDefault(); } /* Chrome, Safari, Firefox */
+  e.returnValue = false; /* IE7, IE8 */
+}
 
 controller.scrollTo(function(xval,yval) {
   
   if(window.scrollY <= 7075 && !isInnerPage){ return; }
+  
+  var timestart;
+  var timeend;
 
+  if(!isInnerPage){
+    timestart = 2;
+    timeend = timevar;
+  } else {
+    timestart = timevar;
+    timeend = 2;
+  }
 
-  tl.to(window, 2, { scrollTo : {x : WSCONST }, ease : Power2.easeIn})
+  document.onmousewheel = function(){ stopWheel(); } /* IE7, IE8 */
+if(document.addEventListener){ /* Chrome, Safari, Firefox */
+    document.addEventListener('DOMMouseScroll', stopWheel, false);
+}
+
+setTimeout(function() { document.onmousewheel = null;  /* IE7, IE8 */
+                        if(document.addEventListener){ /* Chrome, Safari, Firefox */
+                           document.removeEventListener('DOMMouseScroll', stopWheel, false);
+                        } }, (timestart + 0.002 + timeend) * 1000);
+  tl.to(window, timestart, { scrollTo : {x : WSCONST }, ease : Power2.easeIn})
     .to(window, 0.002, { scrollTo : {y : yval }, ease : Power4.easeInOut})
-    .to(window, 2, { scrollTo : {x : xval }, ease : Power2.easeOut})
+    .to(window, timeend, { scrollTo : {x : xval }, ease : Power2.easeOut});
 
 });
 
@@ -1536,6 +1756,7 @@ $(document).on("click", 'a[href^=\\#]', function(e) {
   var id = $(this).attr("href"); // grab the href attribute value
   var xval = AnchorToX(id);
   var yval = AnchorToY(id);
+  timevar = AnchorToTime(id);
   
   if($(id).length > 0) {
     // prevents default behavior of links.

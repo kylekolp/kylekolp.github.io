@@ -1,5 +1,5 @@
 body{
-    overflow-x: hidden;
+    overflow: hidden;
     animation: ScrollDelay 4.25s ease-in-out 0s forwards;
 }
 
@@ -1021,6 +1021,10 @@ svg {
     z-index: -2;
 }
 
+#CompBlock1.Invisible {
+    opacity: 0;
+}
+
 #CompBlock2 {
     position: absolute;
     top: 2600px;
@@ -1192,6 +1196,379 @@ svg {
     background-repeat: no-repeat;
     clip: rect(0px, 800px, 800px, 13px);
     background-image: url("img/Scene3/AlgoLogo.svg");
+}
+
+
+#Algobutton {
+    position: absolute;
+    padding: 0;
+    border: none;
+    background: none;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+    text-align: center;
+    color: rgba(0,0,0,.82);
+    font-size: 20px;
+    top: 240px;
+    left: 205px;
+    z-index: 8;
+}
+
+#AlgoFull {
+    position: absolute;
+    top: 0px;
+    left: 2600px; /* 7540 for x coor as well*/
+}
+
+#YellowCloud {
+    position: absolute;
+    top: -450px;
+    left: -400px;
+    width: 3121px;
+    height: 1718px;
+    background-image: url("img/Scene3Proj/AlgoVisual/YellowCloud.svg");
+    z-index: 0;
+}
+
+#YellowCloud2 {
+    position: absolute;
+    top: -450px;
+    left: 10000px;
+    width: 3121px;
+    height: 1718px;
+    background-image: url("img/Scene3Proj/AlgoVisual/YellowCloud.svg");
+    z-index: 0;
+}
+
+#AlgoExtTitle{
+    position: absolute;
+    top: 382px;
+    left: 210px;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+    font-size: 100px;
+    white-space: nowrap;
+    letter-spacing: -0.087em;
+    z-index: 1;
+}
+
+#AlgoExtDate{
+    position: absolute;
+    top: 197px;
+    left: 200px;
+    width: 216px;
+    height: 193px;
+    background-size: 95% 95%;
+    background-repeat: no-repeat;
+    background-image: url("img/Scene3Proj/AlgoVisual/AlgoDate.svg");
+    z-index: 4;
+}
+
+#AlgoSubTitle{
+    position: absolute;
+    top: 550px;
+    left: 285px;
+    color: #555;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 300;
+    font-size: 52px;
+    text-align: left;
+    white-space: nowrap;
+    letter-spacing: -0.087em;
+    z-index: 1;
+}
+
+#AlgoExtLogo {
+    position: absolute;
+    top: 150px;
+    left: 1000px;
+    width: 785px;
+    height: 633px;
+    background-image: url("img/Scene3Proj/AlgoVisual/GridMain.svg");
+    clip: rect(0px, 800px, 800px, 16px);
+    z-index: 1;
+}
+
+#AlgoText1{
+    position: absolute;
+    top: 1250px;
+    left: 200px;
+    color: #555;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+    font-size: 65px;
+    text-align: center;
+    white-space: nowrap;
+    letter-spacing: -0.071em;
+    z-index: 1;
+}
+
+#AlgoText2List {
+    position: absolute;
+    top: 1500px;
+    left: 350px;
+    text-align: center;
+}
+
+.AlgoLink{
+    color: #555;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 300;
+    font-size: 40px;
+    white-space: nowrap;
+    display: inline-block;
+    letter-spacing: -0.071em;
+    text-decoration: none;
+    padding: 10px;
+    z-index: 1;
+}
+
+.AlgoLink:hover {
+    color: #00FF80;
+    cursor:pointer;
+}
+
+.AlgoLink:focus {
+    outline: none;
+}
+
+#AlgoGridChangable {
+    position: absolute;
+    top: 1300px;
+    left: 1070px;
+    width: 644px;
+    height: 644px;
+    background-repeat: no-repeat;
+    background-image: url("img/Scene3Proj/AlgoVisual/GridBase.svg");
+    z-index: 1;
+}
+
+#AlgoGridChangable.Base {
+    background-image: url("img/Scene3Proj/AlgoVisual/GridBase.svg");
+}
+
+#AlgoGridChangable.BFS {
+    background-image: url("img/Scene3Proj/AlgoVisual/GridBFSDJIK.svg");
+}
+
+#AlgoGridChangable.DFS {
+    background-image: url("img/Scene3Proj/AlgoVisual/GridDFS.svg");
+}
+
+#AlgoGridChangable.DJ {
+    background-image: url("img/Scene3Proj/AlgoVisual/GridBFSDJIK.svg");
+}
+
+#AlgoGridChangable.AStar {
+    background-image: url("img/Scene3Proj/AlgoVisual/GridAStar.svg");
+}
+
+#AlgoSettings {
+    position: absolute;
+    top: 2050px;
+    left: 250px;
+    width: 558px;
+    height: 696px;
+    background-repeat: no-repeat;
+    background-image: url("img/Scene3Proj/AlgoVisual/Settings.svg");
+    z-index: 1;
+}
+
+#AlgoText3{
+    position: absolute;
+    top: 2075px;
+    left: 1170px;
+    color: #555;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+    font-size: 65px;
+    text-align: center;
+    white-space: nowrap;
+    letter-spacing: -0.071em;
+    z-index: 1;
+}
+
+#AlgoText4{
+    position: absolute;
+    top: 2300px;
+    left: 1100px;
+    color: #555;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 400;
+    font-size: 40px;
+    text-align: center;
+    white-space: nowrap;
+    letter-spacing: -0.071em;
+    line-height: 75px;
+    z-index: 1;
+}
+
+#MiniCloud {
+    position: absolute;
+    top: 2675px;
+    width: 2218px;
+    height: 992px;
+    background-repeat: no-repeat;
+    background-image: url("img/Scene3Proj/AlgoVisual/YellowCloudMini.svg");
+    z-index: 2;
+}
+
+#LinkTitle {
+    position: absolute;
+    top: 2950px;
+    left: 650px;
+    color: #555555;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+    font-size: 65px;
+    white-space: nowrap;
+    letter-spacing: -0.087em;
+    z-index: 1;
+}
+
+#LinkSubTitle {
+    position: absolute;
+    top: 3150px;
+    left: 350px;
+    color: #555555;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 400;
+    font-size: 40px;
+    white-space: nowrap;
+    line-height: 75px;
+    letter-spacing: -0.071em;
+    z-index: 1;
+}
+
+#LinkLine {
+    position: absolute;
+    top: 3375px;
+    left: 1200px;
+    color: #555555;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+    font-size: 50px;
+    white-space: nowrap;
+    letter-spacing: -0.087em;
+    text-decoration: none;
+    z-index: 3;
+}
+
+#MiniGrid {
+    position: absolute;
+    top: 3150px;
+    left: 1300px;
+    width: 188px;
+    height: 187px;
+    background-repeat: no-repeat;
+    background-image: url("img/Scene3Proj/AlgoVisual/BubbleIcon.svg");
+    z-index: 1;
+}
+
+#LinkLine:active {
+    top: 3380px;
+    border: none;
+    background: none;
+}
+
+#LinkLine:hover {
+    color: #929292;
+    cursor: pointer;
+}
+
+#LinkLine:focus {
+    outline: none;
+}
+
+#learnSection4 {
+    position: absolute;
+    top: 3605px;
+    white-space: nowrap;
+    color: #555555;
+    font-family: 'Roboto Slab', serif; 
+    text-align: center;
+}
+#GlassCol {
+    position: relative;
+    top: -30px;
+}
+
+.LearnTitle.Glass {
+    position: relative;
+    top: -40px;
+}
+
+.LearnDesc.Glass {
+    position: relative;
+    top: -40px;
+}
+
+#AgileCol{
+    position: relative;
+    top: -144px;
+}
+
+.LearnTitle.Agile {
+    position: relative;
+    top: -94px;
+}
+
+.LearnDesc.Agile {
+    position: relative;
+    top: -94px;
+}
+
+#WebCol{
+    position: relative;
+    top: -5px;
+}
+
+.LearnTitle.Web {
+    position: relative;
+    top: 15px;
+}
+
+.LearnDesc.Web {
+    position: relative;
+    top: 15px;
+}
+
+#GridBanner4 {
+    position: absolute;
+    top: 4775px;
+    left: -40px;
+    width: 2010px;
+    height: 783px;
+    background-repeat: no-repeat;
+    background-image: url("img/Scene3Proj/AlgoVisual/DownloadBanner.svg");
+    z-index: 0;
+}
+
+#DownloadTitle4 {
+    position: absolute;
+    top: 68px;
+    left: 496px;
+    color: #555555;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+    font-size: 96px;
+    letter-spacing: -0.087em;
+    z-index: 2;
+}
+
+#AlgoGitHub4 {
+    position: absolute;
+    top: 267px;
+    left: 646px;
+    width: 800px;
+    height: 260px;
+    background-repeat: no-repeat;
+    background-image: url("img/Scene3Proj/AlgoVisual/DownloadButton.svg");
+}
+
+#AlgoGitHub4:active {
+    top: 265px;
+    background-image: url("img/Scene3Proj/AlgoVisual/DownLoadButtonPressed.svg");
 }
 
 #Scene4 {
